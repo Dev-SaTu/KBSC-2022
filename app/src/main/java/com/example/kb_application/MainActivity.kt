@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         val sign_up_btn: Button = findViewById(R.id.sign_up_btn)
         sign_up_btn.setOnClickListener {
             val Intent = Intent(this,SignUpActivity::class.java)
+            ConnectSql.dbConn()
             startActivity(Intent)
         }
     }
