@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "KB_Application"
+rootProject.name = "KBSC-2022"
 include ':app'
