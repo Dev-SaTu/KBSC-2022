@@ -1,42 +1,29 @@
 package com.example.demo;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 
 public class Connector {
-		
-	public Connector() {
-	
+
+	static String ip;
+	static Connection con;
+	static Statement stmt;
+
+	private Connector() {
 		try {
-
 			String ip = "database-1.cegbnrakdnsa.ap-northeast-2.rds.amazonaws.com";
-			
+
 			Connection con = DriverManager.getConnection(String.format("jdbc:mysql://%s:3306/kb_db", ip), "gihwan", "1z2x3c4v");
-			
-			Statement stmt = con.createStatement(); 
 
-			String sql = "select * from user";
-			ResultSet result = stmt.executeQuery(sql);
-
-			while(result.next()) {
-
-				System.out.println("next");
-
-			}
-
-
+			Statement stmt = con.createStatement();
+			//String sql = "select * from user";
+			//ResultSet result = stmt.executeQuery(sql);
 		} catch (Exception e) {
 
 			e.printStackTrace();
-
 		}
-
 	}
 
-	public static void main(String[] args) {
-
+	public static void MakeConnection() {
 		try {
 
 			Class.forName("com.mysql.cj.jdbc.Driver"); 
@@ -44,11 +31,12 @@ public class Connector {
 			new Connector();
 
 		} catch (Exception e) {
-
 			e.printStackTrace();
-
 		}
+	}
 
+	public static ResultSet getResultSet(String sql) throws SQLException {
+		return stmt.executeQuery(sql);
 	}
 
 	
