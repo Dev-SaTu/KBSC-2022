@@ -13,17 +13,22 @@ public class UserMapper {
     {
 
     }
+    
     void signUp(UserDTO user) throws SQLException {
+    	
         String command = String.format("INSERT INTO user (account, password, name, email) VALUES (%s#{account}, %s#{password}, %s#{email}, %s#{name}", user.getAccount(), user.getPassword(), user.getEmail(), user.getName());
-        ResultSet result = Connector.getResultSet(command);
-        result.close();
+        Connector.getResultSet(command);
+        
     }
-    UserDTO login(UserDTO user)
+    
+    public UserDTO login(UserDTO user)
     {
+		return user;
 
     }
     UserDTO findWithUserId(long userID)
     {
+		return null;
 
     }
 }
