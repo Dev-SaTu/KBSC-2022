@@ -6,27 +6,33 @@ public class UserDTO {
     private String account;
     private String password;
     private String name;
-    private String email;
-    private long id;
-    private Timestamp created_at;
-    private Timestamp updated_at;
+    private String address;
+    private String tel;
+
+    private int type;
+
     private int is_deleted;
+
+    public UserDTO(String account, String password, String name, String address, String tel)
+    {
+        this.account = account;
+        this.password = password;
+        this.name = name;
+        this.address = address;
+        this.tel = tel;
+    }
 
     public String toString(){
         String tmp = "account : " + account + "\nname : " + name;
         return tmp;
     }
 
-    public long getId(){return id;}
-
-    public void setId(long id){this.id = id;}
-
-    public String getEmail() {
-        return email;
+    public String getAddress() {
+        return address;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getAccount() {
@@ -53,15 +59,11 @@ public class UserDTO {
         this.name = name;
     }
 
-    public Timestamp getUpdated_at(){return updated_at;}
+    public String getTel(){return tel;}
 
-    public void setUpdated_at(Timestamp updated_at){this.updated_at = updated_at;}
+    public int getType(){return type;}
 
-    public Timestamp getCreated_at(){return created_at;}
+    //public int getDeleted_at(){return is_deleted;}
 
-    public void setCreated_at(Timestamp created_at){this.created_at = created_at;}
-
-    public int getDeleted_at(){return is_deleted;}
-
-    public void setDeleted_at(int is_deleted){this.is_deleted = is_deleted;}
+    //public void setDeleted_at(int is_deleted){this.is_deleted = is_deleted;}
 }

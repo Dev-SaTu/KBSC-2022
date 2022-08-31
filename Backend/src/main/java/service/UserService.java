@@ -8,6 +8,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import repository.UserMapper;
 
 import javax.servlet.http.HttpServletRequest;
+import java.sql.SQLException;
 
 @Service
 public class UserService{
@@ -18,7 +19,7 @@ public class UserService{
     private BCryptImpl bCrypt;
 
 
-    public boolean signUp(UserDTO user){
+    public boolean signUp(UserDTO user) throws SQLException {
         //이미 가입된 아이디가 없는지 확인
         UserDTO tmp = userMapper.login(user);
 
@@ -36,16 +37,16 @@ public class UserService{
 
     }
 
-    public boolean login(UserDTO user){
+    public boolean login(UserDTO user) throws SQLException {
         HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
         Long CUserId = (Long)request.getSession().getAttribute("userId");
         //로그인된 정보가 없다면 mapper에서 user정보 받아오기
         if(CUserId == null) {
             UserDTO fuser = userMapper.login(user);
             //받아온 유저정보가 유효한지 확인
-            if(fuser != null&&fuser.getDeleted_at()==0&& bCrypt.isMatch(user.getPassword(), fuser.getPassword())) {
+            if(fuser != null&& bCrypt.isMatch(user.getPassword(), fuser.getPassword())) {
                 //정보가 유효하면 로그인정보 세션에 저장
-                request.getSession().setAttribute("userId", fuser.getId());
+                request.getSession().setAttribute("userId", fuser.getAccount());
                 return true;
             }
         }
@@ -67,26 +68,26 @@ public class UserService{
         }
     }
 
-    public boolean quit(String password){
-        HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
-        Long CUserId = (Long)request.getSession().getAttribute("userId");
-
-        UserDTO fuser = userMapper.findWithUserId(CUserId);
-        if(fuser!=null && bCrypt.isMatch(password, fuser.getPassword())){
-            userMapper.quit(fuser);
-            request.getSession().removeAttribute("userId");
-            return true;
-        }
-        return false;
-    }
-
-    public UserDTO readUser() throws Exception {
-        HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
-        Long CUserId = (Long)request.getSession().getAttribute("userId");
-
-        if(CUserId == null)
-            throw new Exception("Not Login");
-        UserDTO user = userMapper.findWithUserId(CUserId);
-        return user;
-    }
+//    public boolean quit(String password){
+//        HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+//        Long CUserId = (Long)request.getSession().getAttribute("userId");
+//
+//        UserDTO fuser = userMapper.findWithUserId(CUserId);
+//        if(fuser!=null && bCrypt.isMatch(password, fuser.getPassword())){
+//            userMapper.quit(fuser);
+//            request.getSession().removeAttribute("userId");
+//            return true;
+//        }
+//        return false;
+//    }
+//
+//    public UserDTO readUser() throws Exception {
+//        HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+//        Long CUserId = (Long)request.getSession().getAttribute("userId");
+//
+//        if(CUserId == null)
+//            throw new Exception("Not Login");
+//        UserDTO user = userMapper.findWithUserId(CUserId);
+//        return user;
+//    }
 }

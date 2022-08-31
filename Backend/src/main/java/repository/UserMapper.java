@@ -9,26 +9,23 @@ import java.sql.SQLException;
 
 @Repository
 public class UserMapper {
-    void quit(UserDTO user)
-    {
 
-    }
-    
-    void signUp(UserDTO user) throws SQLException {
-    	
-        String command = String.format("INSERT INTO user (account, password, name, email) VALUES (%s#{account}, %s#{password}, %s#{email}, %s#{name}", user.getAccount(), user.getPassword(), user.getEmail(), user.getName());
+    public void signUp(UserDTO user) throws SQLException {
+        String command = String.format("INSERT INTO user (id, pw, type, name, address, tel) VALUES (%s, %s, %s, %s, %s)", user.getAccount(), user.getPassword(), user.getType(), user.getName(), user.getAddress(), user.getTel());
         Connector.getResultSet(command);
-        
     }
-    
-    public UserDTO login(UserDTO user)
-    {
-		return user;
 
-    }
-    UserDTO findWithUserId(long userID)
-    {
-		return null;
+    public UserDTO login(UserDTO user) throws SQLException {
+        String command = String.format("SELECT * FROM user WHERE id = %s", user.getAccount());
+        ResultSet result = Connector.getResultSet(command);
+        UserDTO tmpUser;
 
+        if(result.next())
+        {
+            tmpUser = new UserDTO(result.getString("id"), result.getString("password"), result.getString("name"), result.getString("address"), result.getString("tel"));
+            return tmpUser;
+        }
+        return null;
     }
 }
+
