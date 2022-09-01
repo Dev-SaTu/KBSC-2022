@@ -16,6 +16,11 @@ public class MainController {
     @Autowired
     private UserService userService;
 
+    @GetMapping("/api/hello")
+    public String hello() {
+    	return "장기환 화이팅!";
+    }
+    
     /*
     @GetMapping(value = "/profile")
     public ResponseEntity<UserDTO> profile() throws Exception {
