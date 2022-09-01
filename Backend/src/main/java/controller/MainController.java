@@ -10,7 +10,7 @@ import service.UserService;
 
 import java.sql.SQLException;
 
-@Controller
+@RestController
 public class MainController {
 
     @Autowired
