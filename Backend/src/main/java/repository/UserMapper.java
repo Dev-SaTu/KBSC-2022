@@ -40,14 +40,6 @@ public class UserMapper {
 		return stmt.executeQuery(sql);
 
 	}
-
-	/*public static void main(String[] args) throws ClassNotFoundException, SQLException {
-
-		Class.forName("com.mysql.cj.jdbc.Driver");
-
-		new Connector();
-
-	}*/
 	
     public void signUp(UserDTO user) throws SQLException {
     	

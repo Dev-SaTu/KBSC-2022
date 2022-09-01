@@ -1,14 +1,17 @@
 package controller;
 
-import domain.UserDTO;
+import java.sql.SQLException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
-import service.UserService;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
-import java.sql.SQLException;
+import domain.UserDTO;
+import service.UserService;
 
 @RestController
 public class MainController {
@@ -46,6 +49,22 @@ public class MainController {
     }
     */
 
+    public MainController() {
+    	
+    	try {
+			signUps(new UserDTO("a", "b", "c", "d", "e"));
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
+    }
+    
+    public static void main(String[] args) {
+    	
+    	new MainController();
+    	
+    }
 
     @PostMapping(value = "/signup")
     public ResponseEntity<String> signUps(@RequestBody UserDTO user) throws SQLException {
