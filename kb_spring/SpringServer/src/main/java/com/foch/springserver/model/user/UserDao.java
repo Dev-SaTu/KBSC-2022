@@ -28,4 +28,8 @@ public class UserDao{
     public User findUser(String userId){
         return repository.findById(userId).orElse(null);
     }
+
+    public void changeType(String userId, int type){
+        repository.chageValue(userId, type);
+    }
 }
