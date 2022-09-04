@@ -25,8 +25,8 @@ public class BenefitUserAllowActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_benefit_user_allow);
 
-        EditText editText = findViewById(R.id.input_name);
-        Button button = (Button) findViewById(R.id.sign_up_submit_btn);
+        EditText editText = findViewById(R.id.editTextTextPersonName);
+        Button button = (Button) findViewById(R.id.allow_button);
 
         button.setOnClickListener(view -> {
 
