@@ -3,6 +3,8 @@ package com.example.myapplication.retrofit;
 import com.example.myapplication.modle.User;
 
 import java.util.List;
+import java.util.Map;
+
 import retrofit2.Call;
 import retrofit2.Response;
 import retrofit2.http.Body;
@@ -19,4 +21,7 @@ public interface UserApi {
 
     @GET("/users/{userId}")
     Call<User> findUser(@Path("userId") String userId);
+
+    @POST("/benefit_user_allow")
+    Call<Map<String, String>> allowBenefitUser(@Path("userId") String userId, @Path("welfareId") String welfareId);
 }

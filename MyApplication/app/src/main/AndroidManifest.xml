@@ -14,7 +14,7 @@
         android:theme="@style/Theme.MyApplication"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".activity_benefit_user_allow"
+            android:name=".BenefitUserAllowActivity"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"

@@ -79,7 +79,7 @@ public class SignUpActivity extends AppCompatActivity {
                         @Override
                         public void onFailure(Call<User> call, Throwable t) {
                             Toast.makeText(SignUpActivity.this, "이미 존재하는 아이디 입니다.", Toast.LENGTH_SHORT).show();
-                            Logger.getLogger(SignUpActivity.class.getName()).log(Level.SEVERE, "Error accurred",t);
+                            Logger.getLogger(SignUpActivity.class.getName()).log(Level.SEVERE, "Error occurred",t);
                         }
                     });
             }
