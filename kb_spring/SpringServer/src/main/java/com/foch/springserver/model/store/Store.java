@@ -6,17 +6,23 @@ import javax.persistence.Id;
 @Entity
 public class Store {
     @Id
-    String id;
+    String business_number;
     String name;
     String tel;
     String location;
-    String business_number;
     String pic;
     String description;
     int score;
+    String user_id;
+    String account_number;
 
-    public String getId(){return id;}
-    public void setId(String id){this.id = id;}
+    public String getUser_id(){return user_id;}
+    public void setUser_id(String user_id){this.user_id = user_id;}
+
+    public String getAccount_number(){return account_number;}
+    public void setAccount_number(String account_number){this.account_number = account_number;}
+    public String getBusiness_number(){return business_number;}
+    public void setBusiness_number(String business_number){this.business_number = business_number;}
 
     public String getName(){return name;}
     public void setName(String name){this.name = name;}
@@ -26,9 +32,6 @@ public class Store {
 
     public String getLocation(){return location;}
     public void setLocation(String location){this.location = location;}
-
-    public String getBusinessNumber(){return business_number;}
-    public void setBusinessNumber(String business_number){this.business_number = business_number;}
 
     public String getPic(){return pic;}
     public void setPic(String pic){this.pic = pic;}
@@ -42,14 +45,15 @@ public class Store {
     @Override
     public String toString(){
         return "Store{" +
-            "id=" + id +
-            ", name='" + name + '\'' +
+            "name='" + name + '\'' +
             ", tel='" + tel + '\'' +
             ", location='" + location + '\'' +
             ", business_number='" + business_number + '\'' +
             ", pic='" + pic + '\'' +
             ", description='" + description + '\'' +
             ", score='" + score + '\'' +
+            ", account_number='" + account_number + '\''+
+            ", user_id='" + user_id + '\'' +
             '}';
     }
 }
