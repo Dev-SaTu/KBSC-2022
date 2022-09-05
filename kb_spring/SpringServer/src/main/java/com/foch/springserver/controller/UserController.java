@@ -26,6 +26,7 @@ public class UserController {
         return user;
     }
 
+
     @RequestMapping("/user/sign-up")
     public User userSignUp(@RequestBody User user){
         User finder = userDao.findUser(user.getId());

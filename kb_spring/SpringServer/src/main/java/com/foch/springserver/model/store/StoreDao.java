@@ -8,11 +8,19 @@ public class StoreDao {
     @Autowired
     private StoreRepository repository;
 
-    public void addStore(Store store){
-        repository.save(store);        
+    public boolean addStore(Store store){
+        Store st = findStore(store.getBusiness_number());
+        if(st == null)
+        {
+            repository.save(store);
+            return true;
+        }
+        else
+            return false;
     }
 
     public Store findStore(String storeId){
         return repository.findById(storeId).orElse(null);
     }
+
 }
