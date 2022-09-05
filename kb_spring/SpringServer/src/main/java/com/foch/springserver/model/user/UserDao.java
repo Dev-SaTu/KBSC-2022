@@ -1,7 +1,5 @@
 package com.foch.springserver.model.user;
 
-import com.foch.springserver.model.store.Store;
-import com.foch.springserver.model.store.StoreDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.util.Streamable;
 import org.springframework.stereotype.Service;
@@ -15,36 +13,6 @@ public class UserDao{
 
     public void addUser(User user){
         repository.save(user);        
-    }
-
-    public boolean payPoint(String business_number, int pay, String id)
-    {
-        StoreDao dao = new StoreDao();
-
-        Store store = dao.findStore(business_number);
-
-        User user = findUser(id);
-
-        User storeUser = findUser(store.getUser_id());
-
-        if(user != null && storeUser != null)
-        {
-            user.setPoint(user.getPoint()-pay);
-
-            repository.changePoint(user.getPoint(), user.getId());
-
-            storeUser.setPoint(storeUser.getPoint()+pay);
-
-            repository.changePoint(storeUser.getPoint(), storeUser.getId());
-
-            return true;
-        }
-
-        return false;
-
-
-
-
     }
 
     public List<User> getAllUser(){
@@ -62,6 +30,6 @@ public class UserDao{
     }
 
     public void changeType(String userId, int type){
-        repository.changeValue(userId, type);
+        repository.chageValue(userId, type);
     }
 }

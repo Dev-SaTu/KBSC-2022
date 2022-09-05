@@ -19,7 +19,8 @@ public class StoreDao {
             return false;
     }
 
-    public Store findStore(String business_number){
-        return repository.findById(business_number).orElse(null);
+    public Store findStore(String storeId){
+        return repository.findById(storeId).orElse(null);
     }
+
 }
