@@ -15,6 +15,9 @@
         android:theme="@style/Theme.MyApplication"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".activity_benefit_user_allow"
+            android:exported="false" />
+        <activity
             android:name=".StorePointActivity"
             android:exported="false" />
         <activity
