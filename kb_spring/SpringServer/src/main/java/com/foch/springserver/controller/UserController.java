@@ -26,6 +26,11 @@ public class UserController {
         return userDao.payPoint(business_number, pay, userId);
     }
 
+    @RequestMapping(value = "/user/{userId}/repassword")
+    public boolean changePassword(@PathVariable("userId") String userId, @RequestBody String password){
+        return userDao.ChangePassword(userId, password);
+    }
+
     @RequestMapping("/user/sign-up")
     public User userSignUp(@RequestBody User user){
         User finder = userDao.findUser(user.getId());

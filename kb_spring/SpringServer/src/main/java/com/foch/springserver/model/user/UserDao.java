@@ -17,6 +17,19 @@ public class UserDao{
         repository.save(user);        
     }
 
+
+    public boolean ChangePassword(String userId, String password)
+    {
+        User user = findUser(userId);
+
+        if(user!=null){
+            repository.changePw(password, userId);
+
+            return true;
+        }
+        return false;
+    }
+
     public boolean payPoint(String business_number, int pay, String id)
     {
         StoreDao dao = new StoreDao();
