@@ -19,4 +19,10 @@ public interface UserRepository extends CrudRepository<User, String> {
     @Transactional
     @Query(value = "update user set point = :point where user.id = :id", nativeQuery = true)
     void changePoint(@Param("point") int point, @Param("id") String id);
+
+
+    @Modifying
+    @Transactional
+    @Query(value = "update user set pw = :password where user.id = :id", nativeQuery = true)
+    void changePw(@Param("password") String password, @Param("id") String id);
 }
