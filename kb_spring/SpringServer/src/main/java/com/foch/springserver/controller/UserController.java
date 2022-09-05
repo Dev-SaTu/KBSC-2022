@@ -26,6 +26,10 @@ public class UserController {
         return user;
     }
 
+	@RequestMapping(value = "/user/{userId}")
+	public boolean payPoint(@PathVariable("business_number") String business_number, @PathVariable("pay") String pay){
+		return userDao.payPoint(business_number, pay);
+	}
 
     @RequestMapping("/user/sign-up")
     public User userSignUp(@RequestBody User user){
