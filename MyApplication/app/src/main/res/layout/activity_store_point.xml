@@ -4,26 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".StorePointActivity">
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="183dp"
-        android:layout_height="84dp"
-        android:text="수혜자 확인"
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="299dp"
+        android:layout_height="233dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.152" />
 
-    <Button
-        android:id="@+id/buttonQR"
-        android:layout_width="163dp"
-        android:layout_height="65dp"
-        android:text="QR 보기"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+    <ImageView
+        android:id="@+id/qrcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.749" />
+        app:layout_constraintTop_toBottomOf="@+id/textureView"
+        android:contentDescription="TODO" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,5 +27,15 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        Button buttonQR = findViewById(R.id.buttonQR);
+
+        buttonQR.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(HomeActivity.this, StorePointActivity.class);
+                startActivity(i);
+            }
+        });
+
     }
 }
