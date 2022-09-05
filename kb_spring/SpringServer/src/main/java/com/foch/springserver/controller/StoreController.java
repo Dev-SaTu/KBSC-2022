@@ -11,7 +11,8 @@ import com.foch.springserver.model.store.StoreDao;
 
 @RestController
 public class StoreController {
-    @Autowired
+    
+	@Autowired
     private StoreDao storeDao;
 
     @RequestMapping(value = "/stores/{storeId}", method = RequestMethod.GET)
