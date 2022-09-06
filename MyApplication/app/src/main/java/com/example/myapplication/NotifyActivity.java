@@ -20,7 +20,7 @@ public class NotifyActivity extends AppCompatActivity {
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                map.setBackgroundColor(map.getResources().getColor(R.color.main_color));
+                map.setBackgroundColor(map.getResources().getColor(R.color.color1));
                 startActivity(new Intent(NotifyActivity.this, NotifyActivity_store.class));
             }
         });
@@ -29,7 +29,7 @@ public class NotifyActivity extends AppCompatActivity {
         store.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                map.setBackgroundColor(map.getResources().getColor(R.color.main_color));
+                map.setBackgroundColor(map.getResources().getColor(R.color.color1));
                 startActivity(new Intent(NotifyActivity.this, NotifyActivity_store.class));
             }
         });
@@ -38,7 +38,7 @@ public class NotifyActivity extends AppCompatActivity {
         welfare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                map.setBackgroundColor(map.getResources().getColor(R.color.main_color));
+                map.setBackgroundColor(map.getResources().getColor(R.color.color1));
                 startActivity(new Intent(NotifyActivity.this, NotifyActivity_welfare.class));
             }
         });

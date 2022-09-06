@@ -56,7 +56,6 @@
                     android:id="@+id/welfare"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/border"
                     android:color="@color/white"
                     android:fontFamily="@font/neo_m"
                     android:text="나눔음식점"
