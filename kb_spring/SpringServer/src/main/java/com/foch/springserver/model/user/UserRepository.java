@@ -10,17 +10,20 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UserRepository extends CrudRepository<User, String> {
+
+    //유저 id을 통해 type을 수정하는 함수
     @Modifying
     @Transactional
     @Query(value = "update user set type = :type where user.id = :name", nativeQuery = true)
     void changeValue(@Param("name") String username, @Param("type") int type);
 
+    //userId를 통해 유저가 가지고 있는 point수정
     @Modifying
     @Transactional
     @Query(value = "update user set point = :point where user.id = :id", nativeQuery = true)
     void changePoint(@Param("point") int point, @Param("id") String id);
 
-
+    //userId를 통해 유저의 pw수정
     @Modifying
     @Transactional
     @Query(value = "update user set pw = :password where user.id = :id", nativeQuery = true)

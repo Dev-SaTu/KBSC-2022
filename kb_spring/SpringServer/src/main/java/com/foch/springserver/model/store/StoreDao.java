@@ -8,6 +8,7 @@ public class StoreDao {
     @Autowired
     private StoreRepository repository;
 
+    //스토어 추가하는 함수
     public boolean addStore(Store store){
         Store st = findStore(store.getBusiness_number());
         if(st == null)
@@ -19,6 +20,7 @@ public class StoreDao {
             return false;
     }
 
+    //스토어 찾는 함수
     public Store findStore(String business_number) {
         return repository.findById(business_number).orElse(null);
     }
