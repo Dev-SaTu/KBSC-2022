@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="btn_apply">확인</string>
+    <string name="btn_cancle">취소</string>
+    <string name="btn_back">이전</string>
+    <string name="btn_register">가입</string>
+    <string name="btn_search">찾기</string>
+    <string name="btn_change">변경</string>
+    <string name="btn_reset">초기화</string>
 </resources>
