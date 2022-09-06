@@ -4,7 +4,6 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -16,12 +15,6 @@
         android:usesCleartextTraffic="true">
         <activity
             android:name=".BenefitUserAllowActivity"
-            android:exported="false" />
-        <activity
-            android:name=".StorePointActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
