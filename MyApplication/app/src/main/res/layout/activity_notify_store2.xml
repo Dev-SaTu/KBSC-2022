@@ -35,7 +35,7 @@
                 android:orientation="horizontal"
                 >
                 <android.widget.Button
-                    android:id="@+id/select01"
+                    android:id="@+id/map"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/sd_btn_toggle_off"
@@ -52,7 +52,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
                 <android.widget.Button
-                    android:id="@+id/select02"
+                    android:id="@+id/store"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/sd_btn_toggle_off"
@@ -68,7 +68,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
                 <android.widget.Button
-                    android:id="@+id/select03"
+                    android:id="@+id/welfare"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/sd_btn_toggle_off"
@@ -98,45 +98,39 @@
                 android:layout_height="179dp"
                 />
 
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="54dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
 
-<!--                나눔 음식점 소개-->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="54dp"
-                    android:layout_marginTop="16dp"
-                    android:orientation="horizontal"
-                    android:weightSum="1">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.2"
-                        android:text="소개"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/store_address"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="0.8"
-                        android:text="음식점 주소"
-                        android:textColor="@color/black"
-                        android:textSize="13sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:text="바른 먹거리를 모두와 나누겠습니다!"
-                    />
-            </LinearLayout>
+                    android:layout_weight="0.2"
+                    android:text="소개"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
+                <TextView
+                    android:id="@+id/store_address"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.8"
+                    android:text="음식점 주소"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="바른 먹거리를 모두와 나누겠습니다!"
+                />
 
 
             <TextView

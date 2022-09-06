@@ -34,7 +34,7 @@
                 android:orientation="horizontal"
                 >
                 <android.widget.Button
-                    android:id="@+id/select01"
+                    android:id="@+id/map"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/sd_btn_toggle_off"
@@ -51,7 +51,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
                 <android.widget.Button
-                    android:id="@+id/select02"
+                    android:id="@+id/store"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/sd_btn_toggle_off"
@@ -67,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
                 <android.widget.Button
-                    android:id="@+id/select03"
+                    android:id="@+id/welfare"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/sd_btn_toggle_off"

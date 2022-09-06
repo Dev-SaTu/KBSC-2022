@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content">
 
                 <android.widget.Button
-                    android:id="@+id/select01"
+                    android:id="@+id/map"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="30dp"
@@ -42,7 +42,7 @@
                     android:textColor="@color/black"></android.widget.Button>
 
                 <android.widget.Button
-                    android:id="@+id/select02"
+                    android:id="@+id/store"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="30dp"
@@ -52,7 +52,7 @@
                     android:textColor="@color/black"></android.widget.Button>
 
                 <android.widget.Button
-                    android:id="@+id/select03"
+                    android:id="@+id/welfare"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/border"
