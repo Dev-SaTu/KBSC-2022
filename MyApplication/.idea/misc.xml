@@ -6,25 +6,31 @@
         <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.299" />
         <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable-v24/login_button_background.xml" value="0.2585" />
         <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2585" />
+        <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/ic_user.xml" value="0.2585" />
         <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/login_edit_border.xml" value="0.2585" />
         <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/login_layout_border.xml" value="0.2585" />
         <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/sd_btn_apply.xml" value="0.2585" />
         <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/sd_btn_cancel.xml" value="0.2585" />
         <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/sd_btn_login.xml" value="0.2585" />
         <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/sd_btn_login_card.xml" value="0.2585" />
+        <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/sd_btn_toggle_off.xml" value="0.2585" />
+        <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/sd_btn_toggle_on.xml" value="0.2585" />
         <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/sd_btn_with_box2.xml" value="0.299" />
+        <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/sd_card_login.xml" value="0.2585" />
         <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/sd_text_box_full.xml" value="0.299" />
         <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/sd_text_box_login.xml" value="0.299" />
         <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/sign_up_edit_border.xml" value="0.2585" />
         <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/sign_up_edit_border2.xml" value="0.2585" />
-        <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_benefit_user_allow.xml" value="0.19746376811594202" />
+        <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_benefit_user_allow.xml" value="0.22" />
         <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_home.xml" value="0.19746376811594202" />
-        <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_login.xml" value="0.22" />
-        <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.19746376811594202" />
-        <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_map.xml" value="0.19746376811594202" />
+        <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_login.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_map.xml" value="0.22" />
         <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_map2.xml" value="0.19746376811594202" />
         <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_store.xml" value="0.19746376811594202" />
         <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_store2.xml" value="0.19746376811594202" />
+        <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_welfare.xml" value="0.19746376811594202" />
+        <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_sign_up.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_store_point.xml" value="0.19746376811594202" />
         <entry key="..\:/Users/ABCD/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_test.xml" value="0.4466666666666667" />
         <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/login_button_background.xml" value="0.2985" />
