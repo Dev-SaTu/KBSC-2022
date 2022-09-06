@@ -43,9 +43,7 @@ public class SignUpActivity extends AppCompatActivity {
         EditText inputPw = findViewById(R.id.input_pw);
         EditText inputPwCheck = findViewById(R.id.input_pw_check);
         EditText inputName = findViewById(R.id.input_name);
-        EditText inputAddress = findViewById(R.id.input_address);
-        EditText inputTel = findViewById(R.id.input_number);
-        Switch inputType = findViewById(R.id.input_type);
+        EditText inputTel = findViewById(R.id.input_tel);
         Button submitBtn = (Button) findViewById(R.id.sign_up_submit_btn);
 
         RetrofitService retrofitService = new RetrofitService();
@@ -56,17 +54,15 @@ public class SignUpActivity extends AppCompatActivity {
             String pw = String.valueOf(inputPw.getText());
             String checkPw = String.valueOf(inputPwCheck.getText());
             String name = String.valueOf(inputName.getText());
-            String address = String.valueOf(inputAddress.getText());
             String tel = String.valueOf(inputTel.getText());
-            int type = inputType.isChecked() ? 1 : 0;
 
             User user = new User();
             user.setId(id);
             user.setPw(pw);
             user.setName(name);
-            user.setAddress(address);
             user.setTel(tel);
-            user.setType(type);
+            user.setAddress("");
+            user.setType(1);
 
             if(pw.equals(checkPw)){
                 userApi.userSignUp(user)
@@ -74,12 +70,14 @@ public class SignUpActivity extends AppCompatActivity {
                         @Override
                         public void onResponse(Call<User> call, Response<User> response) {
                             Toast.makeText(SignUpActivity.this, "회원가입이 완료 되었습니다.", Toast.LENGTH_SHORT).show();
+                            Intent i = new Intent(getApplicationContext(), LoginActivity.class);
+                            startActivity(i);
+                            finish();
                         }
-
                         @Override
                         public void onFailure(Call<User> call, Throwable t) {
                             Toast.makeText(SignUpActivity.this, "이미 존재하는 아이디 입니다.", Toast.LENGTH_SHORT).show();
-                            Logger.getLogger(SignUpActivity.class.getName()).log(Level.SEVERE, "Error occurred",t);
+                            Logger.getLogger(SignUpActivity.class.getName()).log(Level.SEVERE, "Error accurred",t);
                         }
                     });
             }
