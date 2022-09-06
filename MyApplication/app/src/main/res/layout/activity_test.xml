@@ -14,23 +14,26 @@
             android:minWidth="0dp"
             android:minHeight="0dp"
             android:background="@drawable/sd_text_box_full" -->
+
     <android.widget.Button
-        android:minWidth="0dp"
-        android:minHeight="0dp"
-        android:background="@drawable/sd_text_box_full"
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="512dp"
+        android:layout_marginTop="456dp"
+        android:background="@drawable/sd_text_box_login"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
         android:text="@string/btn_cancle"
         android:textColor="@color/color1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintHorizontal_bias="0.465"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.widget.Button
         android:id="@+id/button2"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="612dp"

@@ -15,9 +15,9 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical"
-            android:layout_marginRight="40dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="40dp">
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="45dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -25,7 +25,7 @@
                 android:fontFamily="@font/neo_b"
                 android:text="주변 알림"
                 android:textColor="@color/black"
-                android:textSize="48sp" />
+                android:textSize="33sp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
