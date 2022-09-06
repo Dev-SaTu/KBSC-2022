@@ -3,20 +3,44 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/login_button_background.xml" value="0.2985" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable-v24/border.xml" value="0.2665" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1165" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable-v24/ic_password.xml" value="0.1165" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1165" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/ic_user.xml" value="0.1165" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/font/appfont.xml" value="0.1175925925925926" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/font/font.xml" value="0.20092592592592592" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_benefit_user_allow.xml" value="0.264" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_home.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.12056737588652482" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notification.xml" value="0.21367521367521367" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify.xml" value="0.25" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify2.xml" value="0.1" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify3.xml" value="0.24277456647398843" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify4.xml" value="0.264" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_map.xml" value="0.1" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_sign_up.xml" value="0.26145833333333335" />
         <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_benefit_user_allow.xml" value="0.35507246376811596" />
         <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_home.xml" value="0.35507246376811596" />
-        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_login.xml" value="0.35507246376811596" />
-        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.35507246376811596" />
-        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_sign_up.xml" value="0.35507246376811596" />
-        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_store_point.xml" value="0.35507246376811596" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.3515625" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_sign_up.xml" value="0.3515625" />
         <entry key="app/src/main/res/drawable-v24/border.xml" value="0.1585" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1955" />
         <entry key="app/src/main/res/drawable-v24/ic_password.xml" value="0.1585" />
         <entry key="app/src/main/res/drawable-v24/login_button_background.xml" value="0.1585" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.139" />
+        <entry key="app/src/main/res/drawable/ic_user.xml" value="0.139" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.2947916666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_notify.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_notify2.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_notify3.xml" value="0.2780349731445313" />
+        <entry key="app/src/main/res/layout/activity_notify4.xml" value="0.28539276123046864" />
+        <entry key="app/src/main/res/layout/activity_notify_map.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_notify_map2.xml" value="0.26524505615234373" />
+        <entry key="app/src/main/res/layout/activity_notify_store.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_notify_welfare.xml" value="0.24675324675324675" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/asdf.xml" value="0.3098958333333333" />
       </map>
@@ -27,5 +51,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.28229166666666666" />
+      </ProjectState>
+    </option>
   </component>
 </project>

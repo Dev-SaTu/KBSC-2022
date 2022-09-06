@@ -2,9 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -30,36 +28,51 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SharedPreferences sharedPreferences = getSharedPreferences("sharedPreferences", Activity.MODE_PRIVATE);
+        EditText inputId = findViewById(R.id.idEditText);
+        EditText inputPw = findViewById(R.id.pwEditText);
+
+        Button signUpBtn = findViewById(R.id.sign_up_btn);
+        Button loginBtn = findViewById(R.id.login_btn);
+
         RetrofitService retrofitService = new RetrofitService();
         UserApi userApi = retrofitService.getRetrofit().create(UserApi.class);
 
-        String loginId = sharedPreferences.getString("inputId", null);
-        String loginPwd = sharedPreferences.getString("inputPwd", null);
+        signUpBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), SignUpActivity.class);
+                startActivity(i);
+            }
+        });
 
-        userApi.findUser(loginId)
-                .enqueue(new Callback<User>() {
-                    @Override
-                    public void onResponse(Call<User> call, Response<User> response) {
-                        User tmp = response.body();
-                        if(tmp.getPw().equals(loginPwd)){
-                            user = tmp;
-                            Intent i = new Intent(getApplicationContext(), HomeActivity.class);
-                            startActivity(i);
-                            finish();
+        loginBtn.setOnClickListener(view -> {
+            String id = String.valueOf(inputId.getText());
+            String pw = String.valueOf(inputPw.getText());
+
+            userApi.findUser(id)
+                    .enqueue(new Callback<User>() {
+                        @Override
+                        public void onResponse(Call<User> call, Response<User> response) {
+                            user = response.body();
                         }
-                        else{
-                            Intent i = new Intent(getApplicationContext(), LoginActivity.class);
-                            startActivity(i);
-                            finish();
+                        @Override
+                        public void onFailure(Call<User> call, Throwable t) {
+                            Toast.makeText(MainActivity.this, "아이디/ 비밀번호가 틀렸습니다.1", Toast.LENGTH_SHORT).show();
+                            Logger.getLogger(MainActivity.class.getName()).log(Level.SEVERE, "Error accurred",t);
                         }
-                    }
-                    @Override
-                    public void onFailure(Call<User> call, Throwable t) {
-                        Intent i = new Intent(getApplicationContext(), LoginActivity.class);
-                        startActivity(i);
-                        finish();
-                    }
-                });
+                    });
+
+            if(user != null){
+                if(user.getId().equals(id) && user.getPw().equals(pw)){
+                    Intent i = new Intent(getApplicationContext(), HomeActivity.class);
+                    startActivity(i);
+                }
+                else{
+                    Toast.makeText(MainActivity.this, "아이디/ 비밀번호가 틀렸습니다.2", Toast.LENGTH_SHORT).show();
+                }
+            }
+            else
+                Toast.makeText(MainActivity.this, "아이디/ 비밀번호가 틀렸습니다.3", Toast.LENGTH_SHORT).show();
+        });
     }
 }
