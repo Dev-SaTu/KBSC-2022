@@ -46,7 +46,9 @@
                     android:minHeight="0dp"
                     android:text="지도"
                     android:textColor="@color/black"></android.widget.Button>
-                <Space
+
+                <android.widget.Button
+                    android:id="@+id/store"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
@@ -62,7 +64,9 @@
                     android:minHeight="0dp"
                     android:text="복지기관"
                     android:textColor="@color/black"></android.widget.Button>
-                <Space
+
+                <android.widget.Button
+                    android:id="@+id/welfare"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
