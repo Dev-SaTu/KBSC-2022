@@ -56,10 +56,26 @@
         <entry key="app/src/main/res/drawable-v24/border.xml" value="0.1585" />
         <entry key="app/src/main/res/drawable-v24/ic_password.xml" value="0.1585" />
         <entry key="app/src/main/res/drawable-v24/login_button_background.xml" value="0.1585" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.139" />
+        <entry key="app/src/main/res/drawable/ic_user.xml" value="0.139" />
+        <entry key="app/src/main/res/drawable/login_edit_border.xml" value="0.181" />
+        <entry key="app/src/main/res/drawable/login_layout_border.xml" value="0.181" />
+        <entry key="app/src/main/res/drawable/sign_up_edit_border.xml" value="0.181" />
+        <entry key="app/src/main/res/drawable/sign_up_edit_border2.xml" value="0.181" />
+        <entry key="app/src/main/res/layout/activity_benefit_user_allow.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_notify.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_notify2.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_notify3.xml" value="0.2780349731445313" />
+        <entry key="app/src/main/res/layout/activity_notify4.xml" value="0.28539276123046864" />
+        <entry key="app/src/main/res/layout/activity_notify_map.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_notify_map2.xml" value="0.26524505615234373" />
+        <entry key="app/src/main/res/layout/activity_notify_store.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_notify_store2.xml" value="0.13728470111448834" />
+        <entry key="app/src/main/res/layout/activity_notify_welfare.xml" value="0.24675324675324675" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/asdf.xml" value="0.3098958333333333" />
       </map>
