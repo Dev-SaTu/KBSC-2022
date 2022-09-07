@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.*;
 import com.foch.springserver.model.store.Store;
 import com.foch.springserver.model.store.StoreDao;
 
+import java.util.List;
+
 //Store
 @RestController
 public class StoreController {
@@ -18,6 +20,11 @@ public class StoreController {
     public Store findUser(@PathVariable("storeId") String storeId){
         Store store = storeDao.findStore(storeId);
         return store;
+    }
+
+    @RequestMapping(value = "/stores/search")
+    public List<Store> searchStores(@PathVariable("location")String location){
+        return storeDao.searchStores(location);
     }
 
     //스토어 등록 url

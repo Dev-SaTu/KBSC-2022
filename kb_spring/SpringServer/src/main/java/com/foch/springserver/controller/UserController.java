@@ -31,7 +31,6 @@ public class UserController {
         return userDao.payPoint(business_number, pay, userId);
     }
 
-    asdfasdf
     //유저의 비밀번호를 변경하는 url
     @RequestMapping(value = "/user/{userId}/repassword")
     public boolean changePassword(@PathVariable("userId") String userId, @RequestBody String password){
