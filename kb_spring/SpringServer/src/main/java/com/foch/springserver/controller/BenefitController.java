@@ -8,6 +8,7 @@ import com.foch.springserver.benefit.BenefitDao;
 @RestController
 public class BenefitController {
 
+	@SuppressWarnings("unused")
 	@Autowired
 	private BenefitDao BenefitDao;
 	

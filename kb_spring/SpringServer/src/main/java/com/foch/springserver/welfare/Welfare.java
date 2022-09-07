@@ -1,9 +1,9 @@
 package com.foch.springserver.welfare;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 import org.json.JSONObject;
-import org.springframework.data.annotation.Id;
 
 @Entity
 public class Welfare {
