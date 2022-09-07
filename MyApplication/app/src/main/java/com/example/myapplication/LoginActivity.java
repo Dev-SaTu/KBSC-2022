@@ -23,6 +23,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class LoginActivity extends AppCompatActivity {
+    String id, pw;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,15 +48,16 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         loginBtn.setOnClickListener(view -> {
-            String id = String.valueOf(inputId.getText());
-            String pw = String.valueOf(inputPw.getText());
+
+            id = String.valueOf(inputId.getText());
+            pw = String.valueOf(inputPw.getText());
 
             userApi.findUser(id)
                     .enqueue(new Callback<User>() {
                         @Override
                         public void onResponse(Call<User> call, Response<User> response) {
                             MainActivity.user = response.body();
-                            if(MainActivity.user.getPw().equals(pw)){
+                            if(MainActivity.user != null && MainActivity.user.getPw().equals(pw)){
                                 SharedPreferences sharedPreferences = getSharedPreferences("sharedPreferences", Activity.MODE_PRIVATE);
 
                                 SharedPreferences.Editor autoLogin = sharedPreferences.edit();
@@ -71,13 +73,10 @@ public class LoginActivity extends AppCompatActivity {
                         }
                         @Override
                         public void onFailure(Call<User> call, Throwable t) {
-                            Toast.makeText(LoginActivity.this, "아이디/ 비밀번호가 틀렸습니다.1", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginActivity.this, "아이디/ 비밀번호가 틀렸습니다.", Toast.LENGTH_SHORT).show();
                             Logger.getLogger(MainActivity.class.getName()).log(Level.SEVERE, "Error accurred",t);
                         }
                     });
-
-            if(MainActivity.user == null)
-                    Toast.makeText(LoginActivity.this, "아이디/ 비밀번호가 틀렸습니다.2", Toast.LENGTH_SHORT).show();
         });
     }
 }

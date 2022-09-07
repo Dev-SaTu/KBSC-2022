@@ -4,7 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
 
     <application
         android:allowBackup="true"
@@ -15,20 +15,15 @@
         android:theme="@style/Theme.MyApplication"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".activity_testcex"
-            android:exported="false" />
-        <activity
-            android:name=".BenefitUserAllowActivity"
-            android:exported="false" />
-        <activity
-            android:name=".StorePointActivity"
+            android:name=".MyPageActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="HomeActivity"/>
         <activity
             android:name=".SignUpActivity"
             android:exported="true" />
