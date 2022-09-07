@@ -66,7 +66,8 @@
                 android:id="@+id/mapView"
                 android:layout_width="match_parent"
                 android:layout_height="396dp"
-                android:layout_marginTop="16dp" />
+                android:layout_marginTop="16dp"
+                />
 
         </LinearLayout>
     </ScrollView>
