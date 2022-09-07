@@ -36,9 +36,11 @@
                     android:id="@+id/select01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:minHeight="0dp"
                     android:layout_marginRight="30dp"
                     android:color="@color/white"
                     android:fontFamily="@font/neo_m"
+                    android:background="@drawable/sd_btn_toggle_off"
                     android:text="지도"
                     android:textColor="@color/black"></android.widget.Button>
 
