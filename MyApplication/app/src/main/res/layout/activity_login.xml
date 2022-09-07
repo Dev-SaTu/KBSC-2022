@@ -30,62 +30,56 @@
                 android:layout_height="61dp"
                 android:layout_marginStart="60dp"
                 android:layout_marginEnd="60dp"
-                android:layout_gravity="center"
                 app:srcCompat="@drawable/ic_logo" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="30dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="120dp"
-                android:layout_marginEnd="30dp"
-                android:background="@drawable/sd_card_login"
-                android:layout_gravity="center"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/login_layout_border"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
                     android:text="로그인 정보 입력"
                     android:textColor="#000000"
                     android:textSize="15sp"
                     android:textStyle="bold"
                     android:fontFamily="@font/apple_bold"/>
 
-                <android.widget.EditText
+                <EditText
                     android:id="@+id/idEditText"
-                    android:layout_gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginEnd="12dp"
-                    android:background="@drawable/sd_text_box_login"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/login_edit_border"
                     android:backgroundTint="#E5E5E5"
                     android:fontFamily="@font/apple_bold"
-                    android:paddingLeft="12dp"
                     android:hint="계정명"
                     android:textColorHint="#747474"
-                    android:textSize="15sp" />
+                    android:textSize="18sp" />
 
-                <android.widget.EditText
+                <EditText
                     android:id="@+id/pwEditText"
-                    android:layout_gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginEnd="12dp"
-                    android:background="@drawable/sd_text_box_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/login_edit_border"
                     android:backgroundTint="#E5E5E5"
                     android:fontFamily="@font/apple_bold"
-                    android:paddingLeft="12dp"
                     android:hint="비밀번호"
                     android:textColorHint="#747474"
-                    android:textSize="15sp" />
+                    android:textSize="18sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -104,10 +98,10 @@
                         android:textSize="12sp"
                         android:fontFamily="@font/apple_bold"/>
 
-                    <Space
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
 
                     <android.widget.Button
                         android:id="@+id/sign_up_btn"
@@ -128,13 +122,13 @@
                 android:id="@+id/login_btn"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="60dp"
-                android:background="@drawable/sd_btn_login"
-                android:fontFamily="@font/apple_bold"
+                android:background="@drawable/login_layout_border"
                 android:text="로그인"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="@font/apple_bold"/>
 
 
         </LinearLayout>

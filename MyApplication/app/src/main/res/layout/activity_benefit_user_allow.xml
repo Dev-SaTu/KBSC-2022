@@ -31,10 +31,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.965" />
 
-    <android.widget.Button
-        android:minWidth="0dp"
-        android:minHeight="0dp"
-        android:background="@drawable/sd_btn_apply"
+    <Button
         android:id="@+id/allow_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

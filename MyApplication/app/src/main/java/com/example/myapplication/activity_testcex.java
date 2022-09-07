@@ -9,6 +9,6 @@ public class activity_testcex extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test_card);
+        setContentView(R.layout.activity_test);
     }
 }
