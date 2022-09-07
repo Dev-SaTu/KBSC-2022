@@ -30,10 +30,15 @@
         <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/btn_pressed.xml" value="0.226" />
         <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/sd_btn_apply.xml" value="0.226" />
         <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/sd_btn_cancel.xml" value="0.226" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/sd_btn_toggle_off.xml" value="0.1" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/drawable/sd_btn_toggle_on.xml" value="0.1235" />
         <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/font/apple_font.xml" value="0.16944444444444445" />
-        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_map.xml" value="0.12962962962962962" />
-        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_map2.xml" value="0.1" />
-        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_store2.xml" value="0.26145833333333335" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_my_page.xml" value="0.23802083333333332" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_map.xml" value="0.1" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_map2.xml" value="0.264" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_store.xml" value="0.264" />
+        <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_store2.xml" value="0.264" />
         <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_welfare.xml" value="0.26145833333333335" />
         <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_sign_up.xml" value="0.264" />
         <entry key="..\:/Users/Sun/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_store_point.xml" value="0.26145833333333335" />
