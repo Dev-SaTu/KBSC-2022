@@ -148,21 +148,21 @@
                         android:minWidth="0dp"
                         android:minHeight="0dp"
                         android:background="@drawable/sd_text_box_full"
-                        android:layout_width="80dp"
+                        android:layout_width="70dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:layout_marginEnd="12dp"/>
 
                     <android.widget.EditText
                         android:id="@+id/input_tel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/sd_text_box_full"
+                        android:hint="010-1234-5678"
                         android:minWidth="0dp"
                         android:minHeight="0dp"
-                        android:background="@drawable/sd_text_box_full"
-                        android:layout_width="200dp"
-                        android:layout_height="wrap_content"
-
-                        android:hint="010-1234-5678"
-                        android:textSize="15sp"/>
+                        android:textSize="15sp" />
 
                     <android.widget.Button
                         android:minWidth="0dp"
@@ -188,15 +188,12 @@
                     <android.widget.EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:background="@drawable/sd_text_box_full"
                         android:layout_marginEnd="12dp"
                         android:hint="010-1234-5678"
                         android:textSize="15sp"/>
 
-                    <Space
-                        android:layout_width="12dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
 
                     <android.widget.Button
                         android:minHeight="0dp"
