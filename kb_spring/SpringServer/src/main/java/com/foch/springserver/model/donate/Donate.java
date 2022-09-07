@@ -1,10 +1,14 @@
 package com.foch.springserver.model.donate;
 
+import java.sql.Timestamp;
+
 public class Donate {
 
     public int donatePoint;
 
     public int waitingNumber;
+
+    public Timestamp time;
 
     public void setDonatePoint(int donatePoint){this.donatePoint = donatePoint;}
 

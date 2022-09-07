@@ -13,10 +13,14 @@ import java.util.List;
 @Repository
 public interface DonateRepository extends CrudRepository<Store, String> {
 
+    @Transactional
+    @Query(value = "select * from Donate order by timestamp limit 1 desc", nativeQuery = true)
+    int getPoint();
+
     @Modifying
     @Transactional
-    @Query(value = "select * from store where location like %:location% order by rand() limit 5", nativeQuery = true)
-    List<Store> searchStoresWithLocation(@Param("location")String location);
+    @Query(value = "update donate set point = :point where ", nativeQuery = true)
+    void changePoint(@Param("point")int point);
 }
 
 

@@ -24,8 +24,4 @@ public interface UserRepository extends CrudRepository<User, String> {
     void changePoint(@Param("point") int point, @Param("id") String id);
 
     //userId를 통해 유저의 pw수정
-    @Modifying
-    @Transactional
-    @Query(value = "update user set pw = :password where user.id = :id", nativeQuery = true)
-    void changePw(@Param("password") String password, @Param("id") String id);
 }
