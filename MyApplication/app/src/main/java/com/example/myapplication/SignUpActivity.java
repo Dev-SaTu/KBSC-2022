@@ -1,11 +1,17 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import android.Manifest;
+import android.app.PendingIntent;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -44,11 +50,17 @@ public class SignUpActivity extends AppCompatActivity {
         EditText inputPwCheck = findViewById(R.id.input_pw_check);
         EditText inputName = findViewById(R.id.input_name);
         EditText inputTel = findViewById(R.id.input_tel);
-        Button submitBtn = (Button) findViewById(R.id.sign_up_submit_btn);
+        Button submitBtn = findViewById(R.id.sign_up_submit_btn);
 
         RetrofitService retrofitService = new RetrofitService();
         UserApi userApi = retrofitService.getRetrofit().create(UserApi.class);
-
+        /*
+        Button sendSmsBtn = findViewById(R.id.send_SMS_btn);
+        boolean smsCheck = false;
+        sendSmsBtn.setOnClickListener(view -> {
+            sendSMS(inputTel.getText().toString(), "메시지 전송 테스트");
+        });
+        */
         submitBtn.setOnClickListener(view -> {
             String id = String.valueOf(inputId.getText());
             String pw = String.valueOf(inputPw.getText());
@@ -63,6 +75,7 @@ public class SignUpActivity extends AppCompatActivity {
             user.setTel(tel);
             user.setAddress("");
             user.setType(1);
+            user.setPoint(0);
 
             if(pw.equals(checkPw)){
                 userApi.userSignUp(user)
@@ -84,5 +97,18 @@ public class SignUpActivity extends AppCompatActivity {
             else
                 Toast.makeText(SignUpActivity.this, "비밀번호가 틀립니다.", Toast.LENGTH_SHORT).show();
         });
+    }
+
+    private void sendSMS(String tel, String text){
+        PendingIntent pi = PendingIntent.getActivity(
+                this,
+                0,
+                new Intent(this, SignUpActivity.class),
+                0
+                );
+        SmsManager sms = SmsManager.getDefault();
+
+        sms.sendTextMessage(tel, null, text, pi, null);
+        Toast.makeText(SignUpActivity.this, "메시지가 전송 되었습니다.", Toast.LENGTH_SHORT).show();
     }
 }

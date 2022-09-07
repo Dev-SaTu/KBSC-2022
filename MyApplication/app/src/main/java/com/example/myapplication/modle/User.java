@@ -7,6 +7,7 @@ public class User{
     private String address;
     private String tel;
     private int type;
+    private int point;
 
     public String getId(){
         return id;
@@ -50,15 +51,23 @@ public class User{
         this.type = type;
     }
 
+    public int getPoint(){
+        return point;
+    }
+    public void setPoint(int point){
+        this.point = point;
+    }
+
     @Override
     public String toString(){
         return "User{" +
-            "id=" + id +
-            ", pw='" + pw + '\'' +
-            ", name='" + name + '\'' +
-            ", address='" + address + '\'' +
-            ", tel='" + tel + '\'' +
-            ", type='" + type + '\'' +
-            '}';
+                "id=" + id +
+                ", pw='" + pw + '\'' +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", tel='" + tel + '\'' +
+                ", type='" + type + '\'' +
+                ", point='" + point + '\'' +
+                '}';
     }
 }
