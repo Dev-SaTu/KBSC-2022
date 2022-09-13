@@ -21,11 +21,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="45dp"
-            android:fontFamily="@font/apple_bold"
+            android:fontFamily="@font/neo_b"
             android:text="마이 페이지"
             android:textColor="#000000"
-            android:textSize="33sp"
-            android:textStyle="bold" />
+            android:textSize="33sp" />
 
         <TextView
             android:id="@+id/my_page_user_name_text"

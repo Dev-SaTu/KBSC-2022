@@ -9,11 +9,9 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:padding="30dp">
 
         <TextView
             android:id="@+id/textView7"
@@ -21,13 +19,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
+            android:textColor="@color/color5"
             android:text="주변 알림"
-            android:textSize="30sp"
-            android:fontFamily="@font/apple_bold"/>
+            android:textSize="33sp"
+            android:fontFamily="@font/neo_b"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="20dp"
@@ -35,29 +34,32 @@
 
             <android.widget.Button
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="@drawable/sign_up_edit_border2"
-                android:fontFamily="@font/apple_bold"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
+                android:background="@drawable/sd_btn_toggle_off"
+                android:fontFamily="@font/neo_b"
                 android:text="지도"
-                android:textColor="#FFFFFF"/>
+                android:textColor="@color/color2"/>
 
             <android.widget.Button
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="@drawable/sign_up_edit_border2"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
+                android:background="@drawable/sd_btn_toggle_off"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:text="복지기관"
                 android:fontFamily="@font/apple_bold"
-                android:textColor="#FFFFFF"/>
+                android:textColor="@color/color2"/>
 
             <android.widget.Button
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="@drawable/sign_up_edit_border2"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
+                android:background="@drawable/sd_btn_toggle_off"
                 android:text="나눔 음식점"
                 android:fontFamily="@font/apple_bold"
-                android:textColor="#FFFFFF"/>
+                android:textColor="@color/color2"/>
 
         </LinearLayout>
     </LinearLayout>

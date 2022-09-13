@@ -15,9 +15,8 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical"
-            android:layout_marginRight="40dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="40dp">
+            android:padding="30dp"
+            android:layout_marginTop="15dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -25,44 +24,53 @@
                 android:fontFamily="@font/neo_b"
                 android:text="주변 알림"
                 android:textColor="@color/black"
-                android:textSize="48sp" />
+                android:textSize="33sp" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp">
+                android:layout_marginTop="24dp">
 
                 <android.widget.Button
                     android:id="@+id/map"
+                    android:minHeight="0dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="30dp"
                     android:background="@drawable/sd_btn_toggle_off"
                     android:color="@color/white"
                     android:fontFamily="@font/neo_m"
                     android:text="지도"
-                    android:textColor="@color/black"></android.widget.Button>
-
+                    android:textColor="@color/color2"></android.widget.Button>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    ></Space>
                 <android.widget.Button
                     android:id="@+id/store"
+                    android:minHeight="0dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="30dp"
                     android:background="@drawable/sd_btn_toggle_off"
                     android:color="@color/white"
                     android:fontFamily="@font/neo_m"
                     android:text="복지기관"
-                    android:textColor="@color/black"></android.widget.Button>
-
+                    android:textColor="@color/color2"></android.widget.Button>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    ></Space>
                 <android.widget.Button
                     android:id="@+id/welfare"
+                    android:minHeight="0dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/sd_btn_toggle_off"
                     android:color="@color/white"
                     android:fontFamily="@font/neo_m"
                     android:text="나눔음식점"
-                    android:textColor="@color/black"></android.widget.Button>
+                    android:textColor="@color/color2"></android.widget.Button>
             </LinearLayout>
 
             <TextView
