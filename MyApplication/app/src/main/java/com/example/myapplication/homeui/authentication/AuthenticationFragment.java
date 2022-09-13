@@ -1,4 +1,4 @@
-package com.example.myapplication.homeui.point;
+package com.example.myapplication.homeui.authentication;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,11 +11,11 @@ import androidx.fragment.app.Fragment;
 
 import com.example.myapplication.R;
 
-public class PointFragment extends Fragment{
+public class AuthenticationFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_point, container, false);
+        View view = inflater.inflate(R.layout.fragment_authentication, container, false);
         return  view;
     }
 }
