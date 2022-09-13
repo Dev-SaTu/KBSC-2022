@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.example.myapplication.modle.User;
 import com.example.myapplication.retrofit.RetrofitService;
 import com.example.myapplication.retrofit.UserApi;
+import com.google.zxing.integration.android.IntentIntegrator;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

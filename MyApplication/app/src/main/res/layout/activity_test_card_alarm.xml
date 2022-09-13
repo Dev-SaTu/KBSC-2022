@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".activity_testcex">
+    android:layout_height="match_parent">
 
     <!-- 카드 알람은 기존 xml에서 높이를 100dp 로 설정-->
     <android.widget.LinearLayout
