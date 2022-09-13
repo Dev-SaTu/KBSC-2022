@@ -53,11 +53,11 @@ public class MyPageFragment extends Fragment {
    // 포인트 버튼 활성화 여부
    private void getPointType(TextView usingPointBtn, int type){
         if(type == 1)
-            usingPointBtn.setText("사용하기");
+            usingPointBtn.setText("알아 보기");
         if(type == 2 || type == 3)
             usingPointBtn.setText("정산하기");
         if(type == 4)
-            usingPointBtn.setText("알아 보기");
+            usingPointBtn.setText("사용하기");
    }
    // 포인트 표기
    private void getPointText(TextView usingPointText, int type){
