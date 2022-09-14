@@ -13,6 +13,7 @@ public class User {
     private String address;
     private String tel;
     private int type;
+    private int point;
 
     public String getId(){
         return id;
@@ -55,8 +56,6 @@ public class User {
     public void setType(int type){
         this.type = type;
     }
-
-    private int point;
 
     public int getPoint(){return point;}
     public void setPoint(int point){this.point = point;}

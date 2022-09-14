@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.foch.springserver.model.user.User;
 import com.foch.springserver.model.user.UserDao;
 
+import java.util.List;
+
 @RestController
 public class UserController {
 
@@ -22,6 +24,12 @@ public class UserController {
     public User findUser(@PathVariable("userId") String userId){
         User user = userDao.findUser(userId);
         return user;
+    }
+
+    @RequestMapping(value= "/findall", method = RequestMethod.GET)
+    public List<User> hell()
+    {
+        return userDao.getAllUser();
     }
 
     //user가 qr코드를 찍었을때 호출되는 함수

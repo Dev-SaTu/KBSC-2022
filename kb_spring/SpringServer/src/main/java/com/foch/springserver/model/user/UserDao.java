@@ -26,7 +26,6 @@ public class UserDao{
         User user = findUser(userId);
 
         if(user!=null){
-            repository.changePw(password, userId);
 
             return true;
         }
