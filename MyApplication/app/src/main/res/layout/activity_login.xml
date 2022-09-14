@@ -6,29 +6,33 @@
     android:layout_height="match_parent"
     android:background="#FFC000">
 
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerVertical="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
+            android:layout_gravity="bottom"
             android:orientation="vertical">
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="match_parent"
                 android:layout_height="61dp"
+                android:layout_gravity="center_vertical"
                 app:srcCompat="@drawable/ic_logo" />
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"/>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="120dp"
                 android:layout_marginEnd="30dp"
                 android:background="@drawable/sd_card_login"
                 android:layout_gravity="center"
@@ -120,15 +124,16 @@
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:layout_marginBottom="60dp"
                 android:background="@drawable/sd_btn_login"
                 android:fontFamily="@font/apple_bold"
                 android:text="로그인"
                 android:textSize="20sp"
                 android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"/>
 
 
         </LinearLayout>
-    </ScrollView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
