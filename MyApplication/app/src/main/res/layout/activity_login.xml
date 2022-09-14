@@ -99,11 +99,6 @@
                         android:textSize="12sp"
                         android:fontFamily="@font/apple_bold"/>
 
-                    <Space
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
-
                     <android.widget.Button
                         android:id="@+id/sign_up_btn"
                         android:layout_width="wrap_content"

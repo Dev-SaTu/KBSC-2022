@@ -37,7 +37,7 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:background="#00FFFFFF"
-                android:fontFamily="@font/apple_bold"
+                android:fontFamily="@font/neo_b"
                 android:text="MyPage"
                 android:textAllCaps="false"
                 android:textColor="#FFC000"
@@ -55,7 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/apple_bold"
+                android:fontFamily="@font/neo_b"
                 android:text="tmp"
                 android:textColor="#000000"
                 android:textSize="20sp" />
@@ -65,7 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/apple_bold"
+                android:fontFamily="@font/neo_b"
                 android:gravity="end"
                 android:text="tmp"
                 android:textColor="#000000"
@@ -74,39 +74,50 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/sd_card"
             android:elevation="10dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="12dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/neo_b"
+                        android:text="한솥밥 포인트"
+                        android:textSize="18sp"
+                        android:textColor="#000000"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/apple_bold"
-                    android:text="한솥밥 포인트"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:textColor="#000000"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="다음 갱신까지 n명"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/neo_b"
+                        android:textSize="10sp"
+                        />
+                </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="17dp"
-                    android:layout_marginStart="5dp"
-                    android:text="다음 갱신까지 n명"
-                    android:fontFamily="@font/apple_bold"
-                    android:textSize="10sp"
-                    />
 
             </LinearLayout>
-
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
             <TextView
                 android:id="@+id/using_point_text"
                 android:layout_width="match_parent"
@@ -114,22 +125,25 @@
                 android:layout_gravity="center_vertical"
                 android:text="인증여부"
                 android:textColor="#000000"
-                android:fontFamily="@font/apple_bold"
+                android:fontFamily="@font/neo_b"
                 android:gravity="center"
                 android:textSize="30sp"/>
 
             <android.widget.Button
                 android:id="@+id/using_point_btn"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="80dp"
-                android:layout_marginEnd="80dp"
                 android:background="@drawable/sd_btn_with_box2"
-                android:fontFamily="@font/apple_bold"
+                android:fontFamily="@font/neo_b"
                 android:minHeight="0dp"
                 android:text="text"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
         </LinearLayout>
 
         <TextView
@@ -138,7 +152,7 @@
             android:layout_marginTop="20dp"
             android:text="모아 보기"
             android:textSize="20sp"
-            android:fontFamily="@font/apple_bold"
+            android:fontFamily="@font/neo_b"
             android:textColor="#000000"/>
 
         <androidx.recyclerview.widget.RecyclerView
