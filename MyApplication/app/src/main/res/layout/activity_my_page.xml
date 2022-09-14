@@ -10,6 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:padding="30dp"
+        android:clipToPadding="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,8 +22,6 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="30dp"
-            android:layout_marginTop="15dp"
             android:fontFamily="@font/neo_b"
             android:text="마이 페이지"
             android:textColor="#000000"
@@ -30,9 +31,7 @@
             android:id="@+id/my_page_user_name_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="20dp"
             android:fontFamily="@font/neo_b"
             android:text="userName 님"
             android:textColor="#000000"
@@ -42,6 +41,8 @@
         <View
             android:layout_width="match_parent"
             android:layout_marginTop="12dp"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginRight="-30dp"
             android:layout_height="1dp"
             android:background="@color/color5"/>
 
@@ -49,7 +50,6 @@
             android:id="@+id/my_page_user_id_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="20dp"
             android:fontFamily="@font/neo_b"
@@ -61,6 +61,8 @@
         <View
             android:layout_width="match_parent"
             android:layout_marginTop="12dp"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginRight="-30dp"
             android:layout_height="1dp"
             android:background="@color/color5"/>
 
@@ -73,7 +75,6 @@
                 android:id="@+id/my_page_user_validation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/neo_b"
@@ -86,7 +87,6 @@
                 android:id="@+id/my_page_user_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/neo_b"
@@ -100,9 +100,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="0dp"
-                android:layout_marginStart="30dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="30dp"
                 android:background="@drawable/sd_btn_with_box2"
                 android:fontFamily="@font/neo_b"
                 android:text="정보 변경"
@@ -114,6 +112,8 @@
         <View
             android:layout_width="match_parent"
             android:layout_marginTop="12dp"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginRight="-30dp"
             android:layout_height="1dp"
             android:background="@color/color5"/>
 
@@ -125,7 +125,6 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/neo_b"
@@ -139,9 +138,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="0dp"
-                android:layout_marginStart="30dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="30dp"
                 android:background="@drawable/sd_btn_with_box2"
                 android:fontFamily="@font/neo_b"
                 android:text="비밀번호 변경"
@@ -155,6 +152,8 @@
             android:layout_width="match_parent"
             android:layout_marginTop="12dp"
             android:layout_height="1dp"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginRight="-30dp"
             android:background="@color/color5"/>
 
         <LinearLayout
@@ -165,7 +164,6 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/neo_b"
@@ -179,9 +177,7 @@
                 android:minHeight="0dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="30dp"
                 android:background="@drawable/sd_btn_with_box2"
                 android:fontFamily="@font/neo_b"
                 android:text="로그아웃"
