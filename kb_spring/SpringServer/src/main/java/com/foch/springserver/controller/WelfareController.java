@@ -60,7 +60,8 @@ public class WelfareController {
 						result.put("message", "이미 수혜자인 사용자입니다.");
 					} else {
 
-						userDao.changeType(userId, 3);
+						/* User의 Type을 4로 변경 */
+						userDao.changeType(userId, 4);
 						result.put("code", "0");
 						result.put("message", "수혜자로 변경을 완료했습니다.");
 
