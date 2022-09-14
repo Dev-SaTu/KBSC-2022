@@ -25,7 +25,7 @@ public class ManagerDao {
 
             Manager manager = repository.getPoint();
             int point = manager.getAccPoint();
-            repository.changePoint(pay+point);
+            repository.insertManager(pay+point, manager.getSequence_num());
             return true;
         }
 

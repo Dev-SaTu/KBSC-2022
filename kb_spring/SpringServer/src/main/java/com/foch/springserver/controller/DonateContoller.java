@@ -15,8 +15,8 @@ public class DonateContoller {
 
 
     @RequestMapping(value = "/donate/{userId}", method = RequestMethod.POST)
-    public boolean donateUser(@PathVariable("userId")String userId){
-        return donateDAO.donateUser(3000, userId);
+    public boolean donateUser(@PathVariable("userId")String userId, @Param("point")int point){
+        return donateDAO.donateUser(point, userId);
     }
 
 
