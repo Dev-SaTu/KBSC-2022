@@ -6,17 +6,14 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
+            android:layout_marginTop="15dp"
             android:orientation="vertical"
-            android:padding="30dp"
-            android:layout_marginTop="15dp">
+            android:padding="30dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -28,70 +25,82 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginTop="24dp">
 
                 <android.widget.Button
                     android:id="@+id/map"
-                    android:minHeight="0dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/sd_btn_toggle_off"
                     android:color="@color/white"
                     android:fontFamily="@font/neo_m"
+                    android:minHeight="0dp"
                     android:text="지도"
                     android:textColor="@color/color2"></android.widget.Button>
+
                 <Space
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    ></Space>
+                    android:layout_weight="1"></Space>
+
                 <android.widget.Button
                     android:id="@+id/store"
-                    android:minHeight="0dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/sd_btn_toggle_off"
                     android:color="@color/white"
                     android:fontFamily="@font/neo_m"
+                    android:minHeight="0dp"
                     android:text="복지기관"
                     android:textColor="@color/color2"></android.widget.Button>
+
                 <Space
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    ></Space>
+                    android:layout_weight="1"></Space>
+
                 <android.widget.Button
                     android:id="@+id/welfare"
-                    android:minHeight="0dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/sd_btn_toggle_off"
                     android:color="@color/white"
                     android:fontFamily="@font/neo_m"
+                    android:minHeight="0dp"
                     android:text="나눔음식점"
                     android:textColor="@color/color2"></android.widget.Button>
             </LinearLayout>
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:layout_marginTop="250dp"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:textColor="@color/black"
-                android:text="복지기관 인증이 필요합니다." />
-
-            <android.widget.Button
-                android:id="@+id/certify"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@color/color1"
-                android:text="알아보기"
-                android:textColor="@color/white"></android.widget.Button>
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:text="복지기관 인증이 필요합니다."
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <android.widget.Button
+                    android:id="@+id/certify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/sd_btn_apply"
+                    android:minHeight="0dp"
+                    android:text="알아보기"
+                    android:textColor="@color/white"></android.widget.Button>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
