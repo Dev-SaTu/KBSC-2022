@@ -8,13 +8,18 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 @Repository
 public interface ManagerRepository extends CrudRepository<Store, String> {
 
     @Transactional
-    @Query(value = "select * from manager order by timestamp limit 1 desc", nativeQuery = true)
+    @Query(value = "select * from manager order by updated_dt desc limit 1", nativeQuery = true)
     Manager getPoint();
+
+    @Transactional
+    @Query(value = "select * from manager order by updated_dt", nativeQuery = true)
+    List<Manager> getManagers();
 
     @Modifying
     @Transactional
