@@ -1,4 +1,4 @@
-package com.foch.springserver.welfare;
+package com.foch.springserver.model.welfare;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

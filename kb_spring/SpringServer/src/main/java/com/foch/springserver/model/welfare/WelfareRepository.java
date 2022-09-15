@@ -1,9 +1,9 @@
-package com.foch.springserver.benefit;
+package com.foch.springserver.model.welfare;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface BenefitRepository extends CrudRepository<Benefit, String>  {
+public interface WelfareRepository extends CrudRepository<Welfare, String>  {
     
 }

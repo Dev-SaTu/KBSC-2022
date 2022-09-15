@@ -1,4 +1,4 @@
-package com.foch.springserver.benefit;
+package com.foch.springserver.model.benefit;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

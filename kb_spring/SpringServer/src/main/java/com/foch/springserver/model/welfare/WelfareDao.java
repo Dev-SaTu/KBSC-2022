@@ -1,4 +1,4 @@
-package com.foch.springserver.welfare;
+package com.foch.springserver.model.welfare;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.foch.springserver.benefit;
+package com.foch.springserver.model.benefit;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
