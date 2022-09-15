@@ -37,7 +37,7 @@
                 android:layout_marginTop="12dp"
                 android:text="수혜자 전용 기능을 이용하려면\n복지기관 방문 및 인증을 거쳐야합니다."
                 android:fontFamily="@font/neo_b"
-                android:textSize="23sp"
+                android:textSize="20sp"
                 android:gravity="center"
                 android:textColor="@color/color5"
                 />
@@ -52,24 +52,25 @@
                 android:gravity="center">
             <android.widget.Button
                 android:id="@+id/apply_next"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="0dp"
                 android:background="@drawable/sd_btn_apply"
                 android:text="다음"
+                android:layout_weight="1"
                 android:textColor="@color/color6"
                 />
                 <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"/>
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content" />
             <android.widget.Button
                 android:id="@+id/apply_prev"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="0dp"
                 android:background="@drawable/sd_btn_cancel"
                 android:text="이전"
+                android:layout_weight="1"
                 android:textColor="@color/color1"
                 />
             </LinearLayout>
