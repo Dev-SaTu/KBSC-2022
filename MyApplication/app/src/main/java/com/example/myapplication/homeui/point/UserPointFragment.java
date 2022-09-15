@@ -26,18 +26,7 @@ public class UserPointFragment extends Fragment {
         /* QR Code Scan */
         ImageButton imageButton = v.findViewById(R.id.imageButton);
 
-        if (imageButton == null) {
-
-            Toast toast = new Toast(getActivity().getApplicationContext());
-            toast.setText("imageButton is null");
-            toast.setDuration(Toast.LENGTH_SHORT);
-            toast.show();
-
-        } else {
-
-            imageButton.setOnClickListener(view -> new IntentIntegrator(getActivity()).initiateScan());
-
-        }
+        imageButton.setOnClickListener(view -> new IntentIntegrator(getActivity()).initiateScan());
 
         return v;
     }

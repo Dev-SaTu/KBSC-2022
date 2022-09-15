@@ -1,5 +1,6 @@
 package com.example.myapplication.retrofit;
 
+import com.example.myapplication.modle.Store;
 import com.example.myapplication.modle.User;
 
 import java.util.List;
@@ -25,4 +26,7 @@ public interface UserApi {
     @FormUrlEncoded
     @POST("/benefit_user_allow")
     Call<Map<String, String>> allowBenefitUser(@Field("userId") String userId, @Field("welfareId") String welfareId);
+
+    @GET("/stores/{userId}")
+    Call<Store> findStore(@Path("userId") String userId);
 }
