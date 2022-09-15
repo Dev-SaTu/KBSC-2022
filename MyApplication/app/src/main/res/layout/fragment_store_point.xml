@@ -5,13 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="30dp"
             android:clipToPadding="false"
@@ -49,6 +45,7 @@
                         />
 
                     <TextView
+                        android:id="@+id/connect_acount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
@@ -62,25 +59,45 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
 
-                <ImageView
-                    android:id="@+id/imageView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    tools:src="@tools:sample/avatars" />
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
                     android:orientation="vertical"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1">
-
-                    <EditText
-                        android:id="@+id/editTextNumber"
+                    <ImageView
+                        android:id="@+id/qr_space"
+                        android:layout_gravity="center"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"/>
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:ems="10"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="12dp">
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"/>
+
+                    <EditText
+                        android:id="@+id/edit_payment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/sd_text_box_full"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:hint="결제 금액"
+                        android:fontFamily="@font/neo_b"
                         android:inputType="number" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"/>
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -111,6 +128,5 @@
 
         </LinearLayout>
 
-    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
