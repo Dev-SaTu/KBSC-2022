@@ -93,23 +93,24 @@
                 android:gravity="center">
             <android.widget.Button
                 android:id="@+id/apply_next"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="0dp"
                 android:background="@drawable/sd_btn_apply"
                 android:text="확인"
                 android:textColor="@color/color6"
+                android:layout_weight="1"
                 />
                 <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"/>
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content" />
             <android.widget.Button
                 android:id="@+id/apply_prev"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="0dp"
                 android:background="@drawable/sd_btn_cancel"
+                android:layout_weight="1"
                 android:text="이전"
                 android:textColor="@color/color1"
                 />
