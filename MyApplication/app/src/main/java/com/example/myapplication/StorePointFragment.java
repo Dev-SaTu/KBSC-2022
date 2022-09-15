@@ -73,7 +73,7 @@ public class StorePointFragment extends Fragment {
                             }
                         }
 
-                        ((ImageView) v.findViewById(R.id.imageView6)).setImageBitmap(bmp);
+                        ((ImageView) v.findViewById(R.id.qr_space)).setImageBitmap(bmp);
 
                     } catch (Exception e) {
                         e.printStackTrace();

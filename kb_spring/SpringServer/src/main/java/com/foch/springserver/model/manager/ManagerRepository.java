@@ -1,15 +1,14 @@
 package com.foch.springserver.model.manager;
 
-import com.foch.springserver.model.store.Store;
-import org.hibernate.annotations.SQLInsert;
+import java.util.List;
+
+import javax.transaction.Transactional;
+
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-
-import javax.transaction.Transactional;
-import java.util.List;
 
 @Repository
 public interface ManagerRepository extends CrudRepository<Manager, String> {
