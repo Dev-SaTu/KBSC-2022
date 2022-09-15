@@ -23,6 +23,12 @@
             android:name=".MyPageActivity"
             android:exported="false" />
         <activity
+            android:name=".NotifyAccess1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".NotifyAccess2Activity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity

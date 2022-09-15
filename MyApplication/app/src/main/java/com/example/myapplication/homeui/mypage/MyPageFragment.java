@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment;
 import com.example.myapplication.HomeActivity;
 import com.example.myapplication.MainActivity;
 import com.example.myapplication.MyPageActivity;
+import com.example.myapplication.NotifyAccess1Activity;
 import com.example.myapplication.R;
 
 public class MyPageFragment extends Fragment {
@@ -25,7 +26,7 @@ public class MyPageFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_my_page, container, false);
         TextView userNameText = view.findViewById(R.id.user_name_text);
         TextView userTypeText = view.findViewById(R.id.user_type_text);
-        TextView usingPointBtn = view.findViewById(R.id.using_point_btn);
+        Button usingPointBtn = view.findViewById(R.id.using_point_btn);
         TextView usingPointText = view.findViewById(R.id.using_point_text);
         Button myPageBtn = view.findViewById(R.id.my_page_button);
 
@@ -37,6 +38,13 @@ public class MyPageFragment extends Fragment {
         myPageBtn.setOnClickListener(view1 -> {
             Intent i = new Intent(getActivity(), MyPageActivity.class);
             startActivity(i);
+        });
+
+        usingPointBtn.setOnClickListener(view2 -> {
+
+            Intent i = new Intent(getActivity(), NotifyAccess1Activity.class);
+            startActivity(i);
+
         });
 
         return view;
@@ -51,7 +59,7 @@ public class MyPageFragment extends Fragment {
             userTypeText.setText("복지기관");
    }
    // 포인트 버튼 활성화 여부
-   private void getPointType(TextView usingPointBtn, int type){
+   private void getPointType(Button usingPointBtn, int type){
         if(type == 1)
             usingPointBtn.setText("알아 보기");
         if(type == 2 || type == 3)
