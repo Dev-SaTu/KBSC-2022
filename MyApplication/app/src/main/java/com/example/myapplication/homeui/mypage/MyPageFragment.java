@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -42,8 +43,16 @@ public class MyPageFragment extends Fragment {
 
         usingPointBtn.setOnClickListener(view2 -> {
 
-            Intent i = new Intent(getActivity(), NotifyAccess1Activity.class);
-            startActivity(i);
+            if (MainActivity.user.getType() == 1) {
+
+                Intent i = new Intent(getActivity(), NotifyAccess1Activity.class);
+                startActivity(i);
+
+            } else {
+
+                Toast.makeText(getActivity(), "지원하지 않는 기능입니다.", Toast.LENGTH_SHORT).show();
+
+            }
 
         });
 

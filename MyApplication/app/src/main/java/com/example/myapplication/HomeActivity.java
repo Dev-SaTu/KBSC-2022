@@ -48,12 +48,14 @@ public class HomeActivity extends AppCompatActivity {
                     break;
 
                 case R.id.navigation_typeSelect1:
-                    if(type == 2)
+                    if(type == 2) {
                         replaceFragment(new RestaurantFragment());
-                    else if(type == 3)
-                        replaceFragment(new WelfareFragment());
-                    else
+                    } else if(type == 3) {
+                        // replaceFragment(new WelfareFragment());
+                        Toast.makeText(HomeActivity.this, "지원하지 않는 기능입니다.", Toast.LENGTH_SHORT).show();
+                    } else {
                         replaceFragment(new NotificationFragment());
+                    }
                     break;
 
                 case R.id.navigation_donation:

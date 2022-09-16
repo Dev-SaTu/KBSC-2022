@@ -39,6 +39,8 @@ public class LoginActivity extends AppCompatActivity {
         RetrofitService retrofitService = new RetrofitService();
         UserApi userApi = retrofitService.getRetrofit().create(UserApi.class);
 
+        findViewById(R.id.findIdPwButton).setOnClickListener(view -> Toast.makeText(LoginActivity.this, "지원하지 않는 기능입니다.", Toast.LENGTH_SHORT).show());
+
         signUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

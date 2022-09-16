@@ -22,8 +22,7 @@ public class RestaurantPointFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_restaurant_point, container, false);
 
-        Button button = v.findViewById(R.id.create_qr_button);
-        button.setOnClickListener(view -> {
+        v.findViewById(R.id.create_qr_button).setOnClickListener(view -> {
 
             FragmentManager fragmentManager = getChildFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();

@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MyPageActivity extends AppCompatActivity {
 
@@ -26,6 +27,9 @@ public class MyPageActivity extends AppCompatActivity {
         TextView userValidation = findViewById(R.id.my_page_user_validation);
         TextView userAddress = findViewById(R.id.my_page_user_address);
 
+        findViewById(R.id.my_page_user_type_setting_btn).setOnClickListener(view -> Toast.makeText(MyPageActivity.this, "지원하지 않는 기능입니다.", Toast.LENGTH_SHORT).show());
+
+        findViewById(R.id.change_pw_btn).setOnClickListener(view -> Toast.makeText(MyPageActivity.this, "지원하지 않는 기능입니다.", Toast.LENGTH_SHORT).show());
 
         userNameText.setText(MainActivity.user.getName() + " 님");
         userIDText.setText(MainActivity.user.getId());
