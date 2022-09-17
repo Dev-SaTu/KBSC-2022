@@ -77,11 +77,8 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
-    private void replaceFragment(Fragment fragment){
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.home_container, fragment);
-        fragmentTransaction.commit();
+    public void replaceFragment(Fragment fragment) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.home_container, fragment).commit();
     }
 
     private void setBottomItem(BottomNavigationView navigationView, int type){

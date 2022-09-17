@@ -12,25 +12,19 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.myapplication.HomeActivity;
 import com.example.myapplication.R;
 import com.example.myapplication.StorePointFragment;
 
 public class RestaurantPointFragment extends Fragment {
 
+    @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         View v = inflater.inflate(R.layout.fragment_restaurant_point, container, false);
-
-        v.findViewById(R.id.create_qr_button).setOnClickListener(view -> {
-
-            FragmentManager fragmentManager = getChildFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.home_container, new StorePointFragment());
-            fragmentTransaction.commit();
-
-        });
-
+        v.findViewById(R.id.create_qr_button).setOnClickListener(view -> new HomeActivity().replaceFragment(new StorePointFragment()));
         return v;
+
     }
 }
