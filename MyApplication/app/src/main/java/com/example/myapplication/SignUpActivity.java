@@ -54,13 +54,7 @@ public class SignUpActivity extends AppCompatActivity {
 
         RetrofitService retrofitService = new RetrofitService();
         UserApi userApi = retrofitService.getRetrofit().create(UserApi.class);
-        /*
-        Button sendSmsBtn = findViewById(R.id.send_SMS_btn);
-        boolean smsCheck = false;
-        sendSmsBtn.setOnClickListener(view -> {
-            sendSMS(inputTel.getText().toString(), "메시지 전송 테스트");
-        });
-        */
+
         submitBtn.setOnClickListener(view -> {
             String id = String.valueOf(inputId.getText());
             String pw = String.valueOf(inputPw.getText());
@@ -97,18 +91,5 @@ public class SignUpActivity extends AppCompatActivity {
             else
                 Toast.makeText(SignUpActivity.this, "비밀번호가 틀립니다.", Toast.LENGTH_SHORT).show();
         });
-    }
-
-    private void sendSMS(String tel, String text){
-        PendingIntent pi = PendingIntent.getActivity(
-                this,
-                0,
-                new Intent(this, SignUpActivity.class),
-                0
-                );
-        SmsManager sms = SmsManager.getDefault();
-
-        sms.sendTextMessage(tel, null, text, pi, null);
-        Toast.makeText(SignUpActivity.this, "메시지가 전송 되었습니다.", Toast.LENGTH_SHORT).show();
     }
 }

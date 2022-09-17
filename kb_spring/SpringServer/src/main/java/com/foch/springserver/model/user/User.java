@@ -4,8 +4,7 @@ import javax.persistence.Id;
 import javax.persistence.Entity;
 
 @Entity
-public class User {
-	
+public class User{
     @Id
     private String id;
     private String pw;
@@ -57,8 +56,13 @@ public class User {
         this.type = type;
     }
 
-    public int getPoint(){return point;}
-    public void setPoint(int point){this.point = point;}
+    public int getPoint(){
+        return point;
+    }
+    public void setPoint(int point){
+        this.point = point;
+    }
+
     @Override
     public String toString(){
         return "User{" +
@@ -68,6 +72,7 @@ public class User {
             ", address='" + address + '\'' +
             ", tel='" + tel + '\'' +
             ", type='" + type + '\'' +
+            ", point='" + point + '\'' +
             '}';
     }
 }

@@ -17,7 +17,7 @@ public class StoreController {
 
     //스토어 정보 확인 url
     @RequestMapping(value = "/stores/{storeId}", method = RequestMethod.GET)
-    public Store findUser(@PathVariable("storeId") String storeId){
+    public Store findStore(@PathVariable("storeId") String storeId){
         Store store = storeDao.findStore(storeId);
         return store;
     }
@@ -29,9 +29,14 @@ public class StoreController {
 
     //스토어 등록 url
     @RequestMapping(value = "/stores/register", method = RequestMethod.POST)
-    public boolean registerStore(@RequestBody Store store){
-        return storeDao.addStore(store);
+    public Store registerStore(@RequestBody Store store){
+        Store finder = storeDao.findStore(store.getId());
+        if(finder == null){
+            storeDao.addStore(store);
+            return store;
+        }
+        else
+            return null;
     }
-
 
 }

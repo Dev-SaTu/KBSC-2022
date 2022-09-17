@@ -1,6 +1,7 @@
 package com.example.myapplication.homeui.mypage;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.myapplication.ChangeTypeActivity;
 import com.example.myapplication.HomeActivity;
 import com.example.myapplication.MainActivity;
 import com.example.myapplication.MyPageActivity;
@@ -24,7 +26,7 @@ public class MyPageFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_my_page, container, false);
         TextView userNameText = view.findViewById(R.id.user_name_text);
-        TextView userTypeText = view.findViewById(R.id.user_type_text);
+        Button userTypeText = view.findViewById(R.id.user_type_text);
         TextView usingPointBtn = view.findViewById(R.id.using_point_btn);
         TextView usingPointText = view.findViewById(R.id.using_point_text);
         Button myPageBtn = view.findViewById(R.id.my_page_button);
@@ -39,16 +41,26 @@ public class MyPageFragment extends Fragment {
             startActivity(i);
         });
 
+        userTypeText.setOnClickListener(view1 -> {
+            Intent i = new Intent(getActivity(), ChangeTypeActivity.class);
+            startActivity(i);
+        });
+
         return view;
     }
     // 계정정보 text 일치화
-    private void getUserType(TextView userTypeText, int type){
-        if(type == 1 || type == 4)
+    private void getUserType(Button userTypeText, int type){
+        if(type == 4)
             userTypeText.setText("일반계정");
         if(type == 2)
             userTypeText.setText("점주계정");
         if(type == 3)
             userTypeText.setText("복지기관");
+        if(type == 1){
+            userTypeText.setText("기관/업장 등록");
+            userTypeText.setTextColor(Color.parseColor("#FFC000"));
+            userTypeText.setTextSize(15);
+        }
    }
    // 포인트 버튼 활성화 여부
    private void getPointType(TextView usingPointBtn, int type){

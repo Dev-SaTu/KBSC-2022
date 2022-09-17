@@ -1,7 +1,5 @@
 package com.foch.springserver.model.manager;
 
-import com.foch.springserver.model.store.Store;
-import org.hibernate.annotations.SQLInsert;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;

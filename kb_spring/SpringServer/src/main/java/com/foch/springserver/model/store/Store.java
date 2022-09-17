@@ -1,6 +1,5 @@
 package com.foch.springserver.model.store;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -8,30 +7,20 @@ import javax.persistence.Id;
 public class Store {
 	
     @Id
-    @Column(name = "business_number", nullable = false)
-    String businessNumber;
-    
-    @Column(name = "name")
+    String id;
     String name;
-    
     String tel;
-    String location;
+    String address1;
+    String address2;
     String description;
     int score;
-    
-    @Column(name = "userId", nullable = false)
-    String userId;
-    
-    @Column(name = "account_number", nullable = false)
-    String accountNumber;
+    String account;
 
-    public String getUser_id(){return userId;}
-    public void setUser_id(String user_id){this.userId = user_id;}
+    public String getId(){return id;}
+    public void setId(String id){this.id = id;}
 
-    public String getAccount_number(){return accountNumber;}
-    public void setAccount_number(String account_number){this.accountNumber = account_number;}
-    public String getBusiness_number(){return businessNumber;}
-    public void setBusiness_number(String business_number){this.businessNumber = business_number;}
+    public String getAccount(){return account;}
+    public void setAccount(String account){this.account = account;}
 
     public String getName(){return name;}
     public void setName(String name){this.name = name;}
@@ -39,8 +28,11 @@ public class Store {
     public String getTel(){return tel;}
     public void setTel(String tel){this.tel = tel;}
 
-    public String getLocation(){return location;}
-    public void setLocation(String location){this.location = location;}
+    public String getAddress1(){return address1;}
+    public void setAddress1(String address1){this.address1 = address1;}
+
+    public String getAddress2(){return address2;}
+    public void setAddress2(String address2){this.address2 = address2;}
 
     public String getDescription(){return description;}
     public void setDescription(String description){this.description = description;}
@@ -53,12 +45,12 @@ public class Store {
         return "Store{" +
             "name='" + name + '\'' +
             ", tel='" + tel + '\'' +
-            ", location='" + location + '\'' +
-            ", businessNumber='" + businessNumber + '\'' +
+            ", address1='" + address1 + '\'' +
+            ", address2='" + address2 + '\'' +
             ", description='" + description + '\'' +
             ", score='" + score + '\'' +
-            ", accountNumber='" + accountNumber + '\''+
-            ", user_id='" + userId + '\'' +
+            ", accountNumber='" + account + '\''+
+            ", user_id='" + id + '\'' +
             '}';
     }
 }

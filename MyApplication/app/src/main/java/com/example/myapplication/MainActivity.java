@@ -14,7 +14,6 @@ import android.widget.Toast;
 import com.example.myapplication.modle.User;
 import com.example.myapplication.retrofit.RetrofitService;
 import com.example.myapplication.retrofit.UserApi;
-import com.google.zxing.integration.android.IntentIntegrator;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -25,6 +24,7 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
     public static User user = null;
+    public static double latitude, longitude;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
 
         String loginId = sharedPreferences.getString("inputId", null);
         String loginPwd = sharedPreferences.getString("inputPwd", null);
+
+        Intent intent = getIntent();
+        latitude = intent.getDoubleExtra("latitude", 0);
+        longitude = intent.getDoubleExtra("longitude", 0);
 
         userApi.findUser(loginId)
                 .enqueue(new Callback<User>() {

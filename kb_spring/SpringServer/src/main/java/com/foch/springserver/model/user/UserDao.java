@@ -41,7 +41,7 @@ public class UserDao{
 
         User user = findUser(id);
 
-        User storeUser = findUser(store.getUser_id());
+        User storeUser = findUser(store.getId());
 
         if(user != null && storeUser != null)
         {
