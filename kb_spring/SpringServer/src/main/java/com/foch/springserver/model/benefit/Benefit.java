@@ -3,8 +3,6 @@ package com.foch.springserver.model.benefit;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-import org.json.JSONObject;
-
 @Entity
 public class Benefit {
 	
@@ -36,18 +34,5 @@ public class Benefit {
 	public void setPoint(int point) {
 		this.point = point;
 	}
-
-	@Override
-    public String toString() {
-    	
-    	JSONObject object = new JSONObject();
-    	
-    	object.put("id", id);
-    	object.put("sequence", sequence);
-    	object.put("point", point);
-    	
-    	return String.format("Benefit%s", object.toString()); 
-    			
-    }
     
 }

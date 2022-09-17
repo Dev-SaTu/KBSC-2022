@@ -3,8 +3,6 @@ package com.foch.springserver.model.welfare;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-import org.json.JSONObject;
-
 @Entity
 public class Welfare {
 	
@@ -45,19 +43,5 @@ public class Welfare {
 	public void setName(String name) {
 		this.name = name;
 	}
-
-	@Override
-    public String toString() {
-    	
-    	JSONObject object = new JSONObject();
-    	
-    	object.put("unique_number", unique_number);
-    	object.put("business_number", business_number);
-    	object.put("location", location);
-    	object.put("name", name);
-    	
-    	return String.format("Benefit%s", object.toString()); 
-    			
-    }
     
 }

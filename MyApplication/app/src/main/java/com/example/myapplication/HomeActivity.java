@@ -6,10 +6,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.Toast;
 
 import com.example.myapplication.databinding.ActivityHomeBinding;
 import com.example.myapplication.homeui.authentication.AuthenticationFragment;
@@ -21,9 +19,6 @@ import com.example.myapplication.homeui.point.UserPointFragment;
 import com.example.myapplication.homeui.restaurant.RestaurantFragment;
 import com.example.myapplication.homeui.welfare.WelfareFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.zxing.integration.android.IntentIntegrator;
-
-import java.util.concurrent.atomic.AtomicReference;
 
 public class HomeActivity extends AppCompatActivity {
     public static Activity _HomeActivity;
@@ -46,7 +41,6 @@ public class HomeActivity extends AppCompatActivity {
                 case R.id.navigation_my_page:
                     replaceFragment(new MyPageFragment());
                     break;
-
                 case R.id.navigation_typeSelect1:
                     if(type == 2) {
                         replaceFragment(new RestaurantFragment());
@@ -57,11 +51,9 @@ public class HomeActivity extends AppCompatActivity {
                         replaceFragment(new NotificationFragment());
                     }
                     break;
-
                 case R.id.navigation_donation:
                     replaceFragment(new DonationFragment());
                     break;
-
                 case R.id.navigation_typeSelect2:
                     if(type == 3)
                         replaceFragment(new AuthenticationFragment());
@@ -69,12 +61,10 @@ public class HomeActivity extends AppCompatActivity {
                         replaceFragment(new UserPointFragment());
                     else
                         replaceFragment(new RestaurantPointFragment());
-
                     break;
             }
             return true;
         });
-
     }
 
     public void replaceFragment(Fragment fragment) {

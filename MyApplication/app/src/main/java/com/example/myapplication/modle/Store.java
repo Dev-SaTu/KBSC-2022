@@ -1,24 +1,20 @@
 package com.example.myapplication.modle;
 
 public class Store {
-
-    String business_number;
+    String id;
     String name;
     String tel;
-    String location;
-    String pic;
+    String address1;
+    String address2;
     String description;
     int score;
-    String user_id;
-    String account_number;
+    String account;
 
-    public String getUser_id(){return user_id;}
-    public void setUser_id(String user_id){this.user_id = user_id;}
+    public String getId(){return id;}
+    public void setId(String id){this.id = id;}
 
-    public String getAccount_number(){return account_number;}
-    public void setAccount_number(String account_number){this.account_number = account_number;}
-    public String getBusiness_number(){return business_number;}
-    public void setBusiness_number(String business_number){this.business_number = business_number;}
+    public String getAccount(){return account;}
+    public void setAccount(String account){this.account = account;}
 
     public String getName(){return name;}
     public void setName(String name){this.name = name;}
@@ -26,11 +22,11 @@ public class Store {
     public String getTel(){return tel;}
     public void setTel(String tel){this.tel = tel;}
 
-    public String getLocation(){return location;}
-    public void setLocation(String location){this.location = location;}
+    public String getAddress1(){return address1;}
+    public void setAddress1(String address1){this.address1 = address1;}
 
-    public String getPic(){return pic;}
-    public void setPic(String pic){this.pic = pic;}
+    public String getAddress2(){return address2;}
+    public void setAddress2(String address2){this.address2 = address2;}
 
     public String getDescription(){return description;}
     public void setDescription(String description){this.description = description;}
@@ -43,13 +39,12 @@ public class Store {
         return "Store{" +
                 "name='" + name + '\'' +
                 ", tel='" + tel + '\'' +
-                ", location='" + location + '\'' +
-                ", business_number='" + business_number + '\'' +
-                ", pic='" + pic + '\'' +
+                ", address1='" + address1 + '\'' +
+                ", address2='" + address2 + '\'' +
                 ", description='" + description + '\'' +
                 ", score='" + score + '\'' +
-                ", account_number='" + account_number + '\''+
-                ", user_id='" + user_id + '\'' +
+                ", accountNumber='" + account + '\''+
+                ", user_id='" + id + '\'' +
                 '}';
     }
 }

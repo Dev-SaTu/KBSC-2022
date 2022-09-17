@@ -72,6 +72,8 @@ public class LoginActivity extends AppCompatActivity {
                                 startActivity(i);
                                 finish();
                             }
+                            else
+                                Toast.makeText(LoginActivity.this, "아이디/ 비밀번호가 틀렸습니다.", Toast.LENGTH_SHORT).show();
                         }
                         @Override
                         public void onFailure(Call<User> call, Throwable t) {

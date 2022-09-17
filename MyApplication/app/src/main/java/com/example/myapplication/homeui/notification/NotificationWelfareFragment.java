@@ -1,4 +1,4 @@
-package com.example.myapplication.homeui.authentication;
+package com.example.myapplication.homeui.notification;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,11 +11,11 @@ import androidx.fragment.app.Fragment;
 
 import com.example.myapplication.R;
 
-public class AuthenticationFragment extends Fragment {
+public class NotificationWelfareFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_authentication, container, false);
+        View view = inflater.inflate(R.layout.fragment_notification_welfare, container, false);
         return  view;
     }
 }
