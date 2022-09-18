@@ -1,8 +1,10 @@
 package com.foch.springserver.model.store;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.util.Streamable;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -23,5 +25,11 @@ public class StoreDao {
 
     public List<Store> searchStores(String location){
         return repository.searchStoresWithLocation(location);
+    }
+
+    public List<Store> getAllUser(){
+        List<Store> stores = new ArrayList<>();
+        Streamable.of(repository.findAll()).forEach(stores::add);
+        return stores;
     }
 }

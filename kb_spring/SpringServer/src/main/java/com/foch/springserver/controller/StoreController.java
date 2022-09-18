@@ -15,16 +15,16 @@ public class StoreController {
 	@Autowired
     private StoreDao storeDao;
 
+    @RequestMapping(value = "/stores", method = RequestMethod.POST)
+    public List<Store> getAllStores(){
+        return storeDao.getAllUser();
+    }
+
     //스토어 정보 확인 url
     @RequestMapping(value = "/stores/{storeId}", method = RequestMethod.GET)
     public Store findStore(@PathVariable("storeId") String storeId){
         Store store = storeDao.findStore(storeId);
         return store;
-    }
-
-    @RequestMapping(value = "/stores/search")
-    public List<Store> searchStores(@PathVariable("location")String location){
-        return storeDao.searchStores(location);
     }
 
     //스토어 등록 url

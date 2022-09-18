@@ -68,7 +68,7 @@ public class LoginActivity extends AppCompatActivity {
                                 autoLogin.putString("inputPwd", pw);
 
                                 autoLogin.commit();
-                                Intent i = new Intent(getApplicationContext(), HomeActivity.class);
+                                Intent i = new Intent(getApplicationContext(), MainActivity.class);
                                 startActivity(i);
                                 finish();
                             }

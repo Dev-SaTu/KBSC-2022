@@ -1,6 +1,11 @@
 package com.foch.springserver.model.welfare;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.util.Streamable;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -9,16 +14,21 @@ public class WelfareDao {
     @Autowired
     private WelfareRepository repository;
 
-    public Welfare find(String benefitId) {
-    	return repository.findById(benefitId).get();
+    public Welfare findWelfare(String id) {
+    	return repository.findById(id).orElse(null);
     }
     
-    public Welfare save(Welfare benefit) {
-    	return repository.save(benefit);
+    public Welfare addWelfare(Welfare welfare) {
+    	return repository.save(welfare);
     }
     
     public void delete(String benefitId) {
-    	repository.delete(find(benefitId));
+    	repository.delete(findWelfare(benefitId));
     }
     
+    public List<Welfare> getAllUser(){
+        List<Welfare> welfares = new ArrayList<>();
+        Streamable.of(repository.findAll()).forEach(welfares::add);
+        return welfares;
+    }
 }
