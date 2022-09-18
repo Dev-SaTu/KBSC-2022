@@ -1,41 +1,46 @@
 package com.example.myapplication.modle;
 
 public class Welfare {
-    int unique_number = 0;
-    String business_number = "";
-    String location = "";
-    String name = "";
 
-    public int getUnique_number() {
-        return unique_number;
+    String id;
+    String address1;
+    String address2;
+    String tel;
+    String name;
+    String description;
+    int score;
+
+    public String getId(){return id;}
+    public void setId(String id){this.id = id;}
+
+    public String getTel(){return tel;}
+    public void setTel(String tel){this.tel = tel;}
+
+    public String getName(){return name;}
+    public void setName(String name){this.name = name;}
+
+    public String getAddress1(){return address1;}
+    public void setAddress1(String address1){this.address1 = address1;}
+
+    public String getAddress2(){return address2;}
+    public void setAddress2(String address2){this.address2 = address2;}
+
+    public String getDescription(){return description;}
+    public void setDescription(String description){this.description = description;}
+
+    public int getScore(){return score;}
+    public void setScore(int score){this.score = score;}
+
+    @Override
+    public String toString(){
+        return "Welfare{" +
+                "id='" + id + '\'' +
+                ", address1='" + address1 + '\'' +
+                ", address2='" + address2 + '\'' +
+                ", tel='" + tel + '\'' +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", score='" + score + '\'' +
+                '}';
     }
-
-    public void setUnique_number(int unique_number) {
-        this.unique_number = unique_number;
-    }
-
-    public String getBusiness_number() {
-        return business_number;
-    }
-
-    public void setBusiness_number(String business_number) {
-        this.business_number = business_number;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
 }

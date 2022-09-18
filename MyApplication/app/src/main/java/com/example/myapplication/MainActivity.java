@@ -11,9 +11,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.myapplication.modle.Store;
 import com.example.myapplication.modle.User;
+import com.example.myapplication.modle.Welfare;
 import com.example.myapplication.retrofit.RetrofitService;
+import com.example.myapplication.retrofit.StoreApi;
 import com.example.myapplication.retrofit.UserApi;
+import com.example.myapplication.retrofit.WelfareApi;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -24,7 +28,13 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
     public static User user = null;
+    public static Welfare welfare = null;
+    public static Store store = null;
     public static double latitude, longitude;
+    RetrofitService retrofitService = new RetrofitService();
+    UserApi userApi = retrofitService.getRetrofit().create(UserApi.class);
+    WelfareApi welfareApi = retrofitService.getRetrofit().create(WelfareApi.class);
+    StoreApi storeApi = retrofitService.getRetrofit().create(StoreApi.class);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +42,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         SharedPreferences sharedPreferences = getSharedPreferences("sharedPreferences", Activity.MODE_PRIVATE);
-        RetrofitService retrofitService = new RetrofitService();
-        UserApi userApi = retrofitService.getRetrofit().create(UserApi.class);
 
         String loginId = sharedPreferences.getString("inputId", null);
         String loginPwd = sharedPreferences.getString("inputPwd", null);
@@ -49,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
                         User tmp = response.body();
                         if(tmp.getPw().equals(loginPwd)){
                             user = tmp;
+                            if(user.getType() == 2) setStore(user.getId());
+                            if(user.getType() == 3) setWelfare(user.getId());
                             Intent i = new Intent(getApplicationContext(), HomeActivity.class);
                             startActivity(i);
                             finish();
@@ -66,5 +76,26 @@ public class MainActivity extends AppCompatActivity {
                         finish();
                     }
                 });
+    }
+    public void setWelfare(String id){
+        welfareApi.findWelfare(id).enqueue(new Callback<Welfare>() {
+            @Override
+            public void onResponse(Call<Welfare> call, Response<Welfare> response) {
+                welfare = response.body();
+            }
+            @Override
+            public void onFailure(Call<Welfare> call, Throwable t) {}
+        });
+    }
+
+    public void setStore(String id){
+        storeApi.findStore(id).enqueue(new Callback<Store>() {
+            @Override
+            public void onResponse(Call<Store> call, Response<Store> response) {
+                store = response.body();
+            }
+            @Override
+            public void onFailure(Call<Store> call, Throwable t) {}
+        });
     }
 }
