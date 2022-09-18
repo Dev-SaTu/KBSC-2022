@@ -61,7 +61,7 @@ public class MyPageFragment extends Fragment {
         return view;
     }
     // 계정정보 text 일치화
-    private void getUserType(Button userTypeText, int type){
+    private void getUserType(TextView userTypeText, int type){
         if(type == 4)
             userTypeText.setText("일반계정");
         if(type == 2)

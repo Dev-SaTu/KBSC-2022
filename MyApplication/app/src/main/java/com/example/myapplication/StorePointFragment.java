@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.example.myapplication.modle.Store;
 import com.example.myapplication.retrofit.RetrofitService;
+import com.example.myapplication.retrofit.StoreApi;
 import com.example.myapplication.retrofit.UserApi;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.common.BitMatrix;
@@ -52,7 +53,7 @@ public class StorePointFragment extends Fragment {
         Button button = v.findViewById(R.id.create_qr_button);
         button.setOnClickListener(view -> {
 
-            UserApi userApi = new RetrofitService().getRetrofit().create(UserApi.class);
+            StoreApi userApi = new RetrofitService().getRetrofit().create(StoreApi.class);
             userApi.findStore(MainActivity.user.getId()).enqueue(new Callback<Store>() {
                 @Override
                 public void onResponse(Call<Store> call, Response<Store> response) {

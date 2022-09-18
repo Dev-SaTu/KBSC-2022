@@ -12,112 +12,159 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp">
+            android:padding="30dp"
+            android:clipToPadding="false"
+            android:layout_marginTop="15dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/apple_bold"
+                android:fontFamily="@font/neo_b"
                 android:text="포인트"
-                android:textColor="#000000"
-                android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textColor="@color/color5"
+                android:textSize="30sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/my_page_layout"
-                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/sd_card"
+                android:elevation="10dp"
+                android:padding="12dp"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:fontFamily="@font/apple_bold"
+                        android:fontFamily="@font/neo_b"
                         android:text="한솥밥 포인트"
                         android:textColor="#000000"
                         android:textSize="18sp"
-                        android:textStyle="bold" />
-
+                        />
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
-                        android:layout_marginTop="17dp"
-                        android:fontFamily="@font/apple_bold"
+                        android:fontFamily="@font/neo_b"
                         android:text="다음 갱신까지 n명"
                         android:textSize="10sp" />
-
                 </LinearLayout>
 
-                <ImageButton
-                    android:id="@+id/imageButton"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:background="@drawable/ic_baseline_qr_code_2_24" />
-
-                <android.widget.Button
-                    android:layout_width="wrap_content"
+                <Space
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="    정산하기    "
-                    android:background="@drawable/sign_up_edit_border2"
-                    android:textColor="#FFFFFF"
-                    android:textSize="20sp"
-                    android:fontFamily="@font/apple_bold"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_weight="1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:fontFamily="@font/apple_bold"
-                    android:text="포인트"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="12,345포인트"
+                        android:textSize="33sp"
+                        android:fontFamily="@font/neo_b"
+                        android:textColor="@color/color5"
+                        />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="12dp"
+                            android:gravity="center">
+                        <android.widget.Button
+                            android:id="@+id/request_cal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:minHeight="0dp"
+                            android:text="정산 신청"
+                            android:background="@drawable/sd_btn_with_box2"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/neo_b" />
+                        <android.widget.Button
+                            android:id="@+id/create_qr_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="0dp"
+                            android:text="QR 생성"
+                            android:background="@drawable/sd_btn_with_box2"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/neo_b" />
+                        </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                </LinearLayout>
 
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/apple_bold"
+                android:fontFamily="@font/neo_b"
+                android:layout_marginTop="24dp"
                 android:text="정산 정보"
                 android:textColor="#000000"
-                android:textSize="23sp"
-                android:textStyle="bold" />
-
-            <androidx.recyclerview.widget.RecyclerView
+                android:textSize="23sp" />
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/my_page_layout" />
+                android:layout_height="100dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/sd_card_recycle"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:elevation="10dp">
+
+                <TextView
+                    android:id="@+id/total_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="총 정산금액 : 12,345p"
+                    android:textColor="@color/color5"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/neo_b" />
+                <TextView
+                    android:id="@+id/wait_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="현재 정산 대기 : 12,345p"
+                    android:textColor="@color/color2"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/neo_b" />
+
+            </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/apple_bold"
+                android:fontFamily="@font/neo_b"
+                android:layout_marginTop="24dp"
                 android:text="정산 내역"
-                android:textColor="#000000"
-                android:textSize="23sp"
-                android:textStyle="bold" />
+                android:textColor="@color/color5"
+                android:textSize="23sp" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/my_page_layout" />
+                android:layout_marginTop="12dp"
+                android:background="@drawable/sd_card_recycle"
+                android:elevation="10dp"/>
 
-        </LinearLayout>
+            </LinearLayout>
 
     </ScrollView>
 

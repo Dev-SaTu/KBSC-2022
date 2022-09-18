@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.myapplication.HomeActivity;
 import com.example.myapplication.R;
+import com.example.myapplication.StorePointFragment;
 
 public class RestaurantPointFragment extends Fragment {
 

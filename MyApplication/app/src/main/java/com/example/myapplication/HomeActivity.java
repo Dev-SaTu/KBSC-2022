@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.example.myapplication.databinding.ActivityHomeBinding;
 import com.example.myapplication.homeui.authentication.AuthenticationFragment;
@@ -45,8 +46,8 @@ public class HomeActivity extends AppCompatActivity {
                     if(type == 2) {
                         replaceFragment(new RestaurantFragment());
                     } else if(type == 3) {
-                        // replaceFragment(new WelfareFragment());
-                        Toast.makeText(HomeActivity.this, "지원하지 않는 기능입니다.", Toast.LENGTH_SHORT).show();
+                        replaceFragment(new WelfareFragment());
+                        // Toast.makeText(HomeActivity.this, "지원하지 않는 기능입니다.", Toast.LENGTH_SHORT).show();
                     } else {
                         replaceFragment(new NotificationFragment());
                     }

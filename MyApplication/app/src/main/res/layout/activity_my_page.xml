@@ -10,6 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:padding="30dp"
+        android:clipToPadding="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,39 +22,49 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/apple_bold"
+            android:fontFamily="@font/neo_b"
             android:text="마이 페이지"
             android:textColor="#000000"
-            android:textSize="35sp"
-            android:textStyle="bold" />
+            android:textSize="33sp" />
 
         <TextView
             android:id="@+id/my_page_user_name_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/neo_b"
             android:text="userName 님"
             android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:fontFamily="@font/apple_bold"/>
+            android:textSize="24sp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginRight="-30dp"
+            android:layout_height="1dp"
+            android:background="@color/color5"/>
 
         <TextView
             android:id="@+id/my_page_user_id_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginTop="20dp"
+            android:fontFamily="@font/neo_b"
             android:text="계정명 : userID"
             android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:fontFamily="@font/apple_bold"/>
+            android:textSize="24sp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginRight="-30dp"
+            android:layout_height="1dp"
+            android:background="@color/color5"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -62,75 +75,86 @@
                 android:id="@+id/my_page_user_validation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="12dp"
                 android:layout_marginEnd="20dp"
-                android:fontFamily="@font/apple_bold"
+                android:fontFamily="@font/neo_b"
                 android:text="한솥밥 인증 : 미인증"
                 android:textColor="#000000"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="24sp"
+                />
 
             <TextView
                 android:id="@+id/my_page_user_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="12dp"
                 android:layout_marginEnd="20dp"
-                android:fontFamily="@font/apple_bold"
-                android:text="한솥밥 인증 : 미인증"
+                android:fontFamily="@font/neo_b"
+                android:text="인증자 - 한상준 님"
                 android:textColor="#000000"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="24sp"
+                />
 
             <android.widget.Button
                 android:id="@+id/my_page_user_type_setting_btn"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_marginStart="40dp"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="40dp"
-                android:background="#FFC000"
-                android:fontFamily="@font/apple_bold"
+                android:background="@drawable/sd_btn_with_box2"
+                android:fontFamily="@font/neo_b"
                 android:text="정보 변경"
                 android:textColor="#FFFFFF"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="15sp"
+                />
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginRight="-30dp"
+            android:layout_height="1dp"
+            android:background="@color/color5"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
                 android:layout_marginEnd="20dp"
-                android:layout_marginTop="40dp"
+                android:fontFamily="@font/neo_b"
                 android:text="비밀번호 변경"
                 android:textColor="#000000"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:fontFamily="@font/apple_bold"/>
+                android:textSize="24sp"
+                />
 
             <android.widget.Button
                 android:id="@+id/change_pw_btn"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_marginStart="40dp"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="40dp"
-                android:background="#FFC000"
-                android:fontFamily="@font/apple_bold"
+                android:background="@drawable/sd_btn_with_box2"
+                android:fontFamily="@font/neo_b"
                 android:text="비밀번호 변경"
                 android:textColor="#FFFFFF"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="15sp"
+                />
 
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginRight="-30dp"
+            android:background="@color/color5"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -140,28 +164,26 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
                 android:layout_marginEnd="20dp"
-                android:layout_marginTop="20dp"
+                android:fontFamily="@font/neo_b"
                 android:text="로그아웃"
                 android:textColor="#000000"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:fontFamily="@font/apple_bold"/>
+                android:textSize="24sp"
+                />
 
             <android.widget.Button
                 android:id="@+id/logout_btn"
+                android:minHeight="0dp"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_marginStart="40dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="40dp"
-                android:background="#FFC000"
-                android:fontFamily="@font/apple_bold"
+                android:background="@drawable/sd_btn_with_box2"
+                android:fontFamily="@font/neo_b"
                 android:text="로그아웃"
                 android:textColor="#FFFFFF"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="14sp"
+                />
         </LinearLayout>
 
     </LinearLayout>

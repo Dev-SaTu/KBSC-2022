@@ -35,128 +35,139 @@
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="24dp"
                     android:text="회원가입"
                     android:textColor="#000000"
-                    android:textSize="30dp"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/apple_bold"/>
+                    android:textSize="33sp"
+                    android:fontFamily="@font/neo_b"/>
 
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="24dp"
                     android:text="본인 이름"
                     android:textColor="#000000"
-                    android:textSize="15dp"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/apple_bold"/>
+                    android:textSize="18sp"
+                    android:fontFamily="@font/neo_b"/>
 
-                <EditText
+                <android.widget.EditText
                     android:id="@+id/input_name"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:background="@drawable/sd_text_box_full"
                     android:layout_width="match_parent"
-                    android:layout_height="42dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="20dp"
-                    android:background="@drawable/sign_up_edit_border" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="30dp"
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="28dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="24dp"
                     android:text="계정명"
                     android:textColor="#000000"
-                    android:textSize="15dp"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/apple_bold"/>
+                    android:textSize="18sp"
+                    android:fontFamily="@font/neo_b"/>
 
-                <EditText
+                <android.widget.EditText
                     android:id="@+id/input_id"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:background="@drawable/sd_text_box_full"
                     android:layout_width="match_parent"
-                    android:layout_height="42dp"
-                    android:layout_marginStart="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginEnd="20dp"
-                    android:background="@drawable/sign_up_edit_border" />
+                    android:layout_marginEnd="30dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="28dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/neo_b"
                     android:text="비밀번호"
                     android:textColor="#000000"
-                    android:textSize="15dp"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/apple_bold"/>
+                    android:textSize="18sp" />
 
-                <EditText
+                <android.widget.EditText
                     android:id="@+id/input_pw"
                     android:layout_width="match_parent"
-                    android:layout_height="42dp"
-                    android:layout_marginStart="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginEnd="20dp"
-                    android:background="@drawable/sign_up_edit_border"
+                    android:layout_marginEnd="30dp"
+                    android:paddingLeft="12dp"
+                    android:background="@drawable/sd_text_box_full"
                     android:hint="비밀번호"
                     android:textSize="15sp" />
 
 
-                <EditText
+                <android.widget.EditText
                     android:id="@+id/input_pw_check"
                     android:layout_width="match_parent"
-                    android:layout_height="42dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="20dp"
-                    android:background="@drawable/sign_up_edit_border"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/sd_text_box_full"
+                    android:paddingLeft="12dp"
                     android:hint="비밀번호 확인"
                     android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="28dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="24dp"
                     android:text="본인 전화 번호"
                     android:textColor="#000000"
-                    android:textSize="15dp"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/apple_bold"/>
+                    android:textSize="18sp"
+                    android:fontFamily="@font/neo_b"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="12dp"
                     android:orientation="horizontal" >
 
-                    <Spinner
+                    <android.widget.Spinner
                         android:id="@+id/spinner"
-                        android:layout_width="80dp"
-                        android:layout_height="42dp"
-                        android:layout_weight="1" />
+                        android:minWidth="0dp"
+                        android:minHeight="0dp"
+                        android:background="@drawable/sd_text_box_full"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"/>
 
-                    <EditText
+                    <android.widget.EditText
                         android:id="@+id/input_tel"
-                        android:layout_width="200dp"
-                        android:layout_height="42dp"
-                        android:background="@drawable/sign_up_edit_border"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="12dp"
+                        android:background="@drawable/sd_text_box_full"
                         android:hint="010-1234-5678"
-                        android:textSize="15sp"/>
+                        android:minWidth="0dp"
+                        android:minHeight="0dp"
+                        android:textSize="15sp" />
 
                     <android.widget.Button
-                        android:id="@+id/send_SMS_btn"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp"
+                        android:background="@drawable/sd_btn_with_box2"
                         android:layout_width="70dp"
-                        android:layout_height="42dp"
-                        android:background="@drawable/sign_up_edit_border2"
+                        android:layout_height="wrap_content"
                         android:text="인증 요청"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
@@ -167,25 +178,28 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
                     android:layout_marginTop="5dp"
                     android:orientation="horizontal" >
 
-                    <EditText
-                        android:layout_width="280dp"
-                        android:layout_height="37dp"
-                        android:background="@drawable/sign_up_edit_border"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
+                    <android.widget.EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/sd_text_box_full"
+                        android:layout_marginEnd="12dp"
+                        android:paddingLeft="12dp"
                         android:hint="010-1234-5678"
                         android:textSize="15sp"/>
 
+
                     <android.widget.Button
-                        android:id="@+id/SMS_check_btn"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
                         android:layout_width="70dp"
-                        android:layout_height="37dp"
-                        android:background="@drawable/sign_up_edit_border2"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/sd_btn_with_box2"
                         android:text="확인"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
@@ -200,11 +214,13 @@
                     android:minHeight="0dp"
                     android:layout_marginTop="24dp"
                     android:layout_marginBottom="20dp"
-                    android:text="가    입"
+                    android:background="@drawable/sd_btn_apply"
+                    android:fontFamily="@font/apple_bold"
+                    android:layout_gravity="center"
+                    android:text="가 입"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/apple_bold"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
         </ScrollView>

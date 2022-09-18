@@ -3,6 +3,38 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_boss_point.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_change_type.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_change_type2.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_change_type3.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_login.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_my_page.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_access1.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_access2.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_map.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_map2.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_store.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_store2.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_notify_welfare.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_sign_up.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_splash.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_test.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_test_card.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/activity_test_card_alarm.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/fragment_authentication.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/fragment_donation.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/fragment_my_page.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/fragment_notification.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/fragment_notification_map.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/fragment_notification_not_valify.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/fragment_notification_restaurant.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/fragment_notification_welfare.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/fragment_restaurant_manage.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/fragment_restaurant_point.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/fragment_store_point.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/fragment_user_point.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/tkdwn/Documents/GitHub/KBSC-2022/MyApplication/app/src/main/res/layout/fragment_welfare_manage.xml" value="0.27708333333333335" />
         <entry key="app/src/main/res/drawable-v24/border.xml" value="0.1585" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1355" />
         <entry key="app/src/main/res/drawable-v24/ic_password.xml" value="0.1585" />
